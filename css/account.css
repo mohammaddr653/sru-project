@@ -610,6 +610,116 @@ div#main-container>div.account-container>div.row>div.account-main>div.user-panel
 /* finish account-main-panel */
 
 
+/* start my course */
+
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container{
+    background-color: white;
+    padding: 0 10px;
+}
+
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list{
+    /* background-color: red; */
+    margin-top: 50px;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul{
+    overflow-y: scroll;
+    height: 400px;
+    padding: 0 20px;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul::-webkit-scrollbar {
+    /* background-color: rgba(174, 255, 0, 0.619); */
+
+    width: 5px;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul::-webkit-scrollbar-thumb{
+
+    background-color: #999;
+    /* width: 5px; */
+    border-radius: 30px;
+    /* transition: all 1.3s; */
+
+}
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul::-webkit-scrollbar-thumb:hover{
+    background-color: whitesmoke;
+    /* transition: all 1.3s; */
+
+}
+
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul>li.course-card{
+    margin: 20px 0;
+    box-shadow: 0 0 1px 1px #d3d3d3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul>li.course-card>a{
+    /* background-color: green; */
+    display: block;
+    width: 100%;
+    height: 150px;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul>li.course-card>a>div{
+    /* background-color: blue; */
+    height: 100%;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul>li.course-card>a>div>div{
+    height: 100%;
+    /* background-color: beige; */
+}
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul>li.course-card>a>div>div>div{
+
+    /* background-color: yellow; */
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul>li.course-card>a>div>div>div.course-card-img>img{
+    height: 90px;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul>li.course-card>a>div>div>div.course-card-teacher{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:start;
+    align-items:center;
+    gap: 10px;
+    font-size: 13px;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul>li.course-card>a>div>div>div.course-card-teacher>div>img{
+    height: 90px;
+
+}
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul>li.course-card>a>div>div>div.course-card-teacher>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: right;
+    align-items: start;
+    gap:20px ;
+    text-align: right;
+
+}
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul>li.course-card>a>div>div>div.course-card-intro{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul>li.course-card>a>div>div>div.course-card-intro h3{
+    font-size: 15px;
+    text-align: left;
+    line-height: 30px;
+}
+
+
+
+
+/* finish my course */
+
+
 
 
 /* finish account main */
