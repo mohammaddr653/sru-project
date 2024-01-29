@@ -337,10 +337,41 @@
                                 </div>
                             </div>
                             <div class="row user-ticket-row user-new-ticket container-fluid" user-new-ticket>
-                                new
+                                <label for="new-ticket-title">عنوان تیکت</label>
+                                <input id="new-ticket-title" type="text" onkeyup="newTicketCheck()">
+                                <label for="new-ticket-box">شرح درخواست</label>
+                                <textarea name="" id="new-ticket-box" cols="30" rows="20" onkeyup="newTicketCheck()"></textarea>
+                                <button id="new-ticket-submit" disabled>ارسال تیکت</button>
                             </div>
                             <div class="row user-ticket-row user-last-tickets" user-last-tickets>
-                                last
+                                <p class="last-tickets-empty">در حال حاضر هیچ تیکتی ندارید !</p>
+                                <!-- <div class="last-tickets">
+                                    <p class="last-ticket-info"><span class="last-ticket-code">#231</span><span class="last-ticket-title">هزینه دوره پرداخت شده ولی امکان دانلود نیست</span><span class="last-ticket-answered">پاسخ داده شد</span></p>
+                                    <p class="last-ticket-date">1402/10/17</p>
+                                </div> 
+                                <div class="last-tickets">
+                                    <p class="last-ticket-info"><span class="last-ticket-code">#231</span><span class="last-ticket-title">هزینه دوره پرداخت شده ولی امکان دانلود نیست</span><span class="last-ticket-answered">پاسخ داده شد</span></p>
+                                    <p class="last-ticket-date">1402/10/17</p>
+                                </div>    
+                                <div class="last-tickets">
+                                    <p class="last-ticket-info"><span class="last-ticket-code">#231</span><span class="last-ticket-title">هزینه دوره پرداخت شده ولی امکان دانلود نیست</span><span class="last-ticket-answered">پاسخ داده شد</span></p>
+                                    <p class="last-ticket-date">1402/10/17</p>
+                                </div>    
+                                <div class="last-tickets">
+                                    <p class="last-ticket-info"><span class="last-ticket-code">#231</span><span class="last-ticket-title">هزینه دوره پرداخت شده ولی امکان دانلود نیست</span><span class="last-ticket-answered">پاسخ داده شد</span></p>
+                                    <p class="last-ticket-date">1402/10/17</p>
+                                </div>    
+                                <div class="last-tickets">
+                                    <p class="last-ticket-info"><span class="last-ticket-code">#231</span><span class="last-ticket-title">هزینه دوره پرداخت شده ولی امکان دانلود نیست</span><span class="last-ticket-answered">پاسخ داده شد</span></p>
+                                    <p class="last-ticket-date">1402/10/17</p>
+                                </div>     -->
+   
+                                <template last-tickets-template>
+                                    <div class="last-tickets">
+                                        <p class="last-ticket-info"><span class="last-ticket-code" last-ticket-code></span><span class="last-ticket-title" last-ticket-title></span><span class="last-ticket-answered" last-ticket-answered>پاسخ داده شد</span></p>
+                                        <p class="last-ticket-date">1402/10/17</p>
+                                    </div>    
+                                </template>
                             </div>
                         </div>
                         <div class="user-cart-container container-fluid bg-success">cart</div>

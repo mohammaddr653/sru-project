@@ -197,6 +197,7 @@ function userNewTicketOpen(){
     closeUserTicketRows();
     userNewTicket.classList.add("user-ticket-row-show");
     userNewTicketTitle.classList.add("user-ticket-title-light");
+    // newTicketCheck();
 }
 function userLastTicketsOpen(){
     closeUserTicketRows();
@@ -263,13 +264,64 @@ function avaterSaveButtonOnOff(){
     if(avaterSaveButton==1){
         // alert("ff");
         document.querySelector("button.save-avatar").classList.add("save-avatar-on");
-        document.querySelector("button.save-avatar").removeAttribute("disabled","")
+        document.querySelector("button.save-avatar").removeAttribute("disabled","");
     }else{
         document.querySelector("button.save-avatar").classList.remove("save-avatar-on");
-        document.querySelector("button.save-avatar").setAttribute("disabled","")
+        document.querySelector("button.save-avatar").setAttribute("disabled","");
     }
 }
 
+
+var newTicketTitle = document.getElementById("new-ticket-title");
+var newTicketBox= document.getElementById('new-ticket-box');
+var newTicketSubmit= document.getElementById('new-ticket-submit');
+
+var lastTicketsEmpty=document.getElementsByClassName("last-tickets-empty")[0];
+var lastTicketsTemplate=document.querySelector("[last-tickets-template]");
+
+function newTicketCheck(){
+    // console.log('entered');
+    if(newTicketTitle.value=="" || newTicketTitle.value==null || newTicketBox.value=="" || newTicketBox.value==null){
+        newTicketSubmit.setAttribute("disabled","");
+        newTicketSubmit.classList.remove('new-ticket-submit-light');
+    }else{
+        newTicketSubmit.removeAttribute("disabled","");
+        newTicketSubmit.classList.add('new-ticket-submit-light');
+    }
+    
+}
+newTicketSubmit.addEventListener("click",addToLastTickets);
+checkLastTicketsEmpty();
+// alert(userLastTickets.childElementCount);
+function checkLastTicketsEmpty(){
+    if(userLastTickets.childElementCount==2){
+        lastTicketsEmpty.style.display="flex";
+    }else{
+        lastTicketsEmpty.style.display="none";
+    }
+}
+
+function addToLastTickets(){
+
+
+    var newLastTicket=lastTicketsTemplate.content.cloneNode(true).children[0];
+    console.log(newLastTicket);
+    var lastTicketCode=newLastTicket.querySelector("[last-ticket-code]");
+    lastTicketCode.textContent="#400";
+    var lastTicketTitle=newLastTicket.querySelector("[last-ticket-title]");
+    lastTicketTitle.textContent=newTicketTitle.value;
+    var lastTicketAnswered=newLastTicket.querySelector("[last-ticket-answered]");
+    lastTicketAnswered.classList.add("last-ticket-answered-show");
+    userLastTickets.append(newLastTicket);
+    newTicketInputClear();
+    checkLastTicketsEmpty();
+
+}
+function newTicketInputClear(){
+    newTicketTitle.value="";
+    newTicketBox.value="";
+    newTicketCheck();
+}
 
 
 
