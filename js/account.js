@@ -178,6 +178,57 @@ closeUserInfoRows();
 userInfoOmomi.classList.add("user-info-row-show");
 userOmomiTitle.classList.add("user-info-title-light");
 
+
+
+
+var userNewTicketTitle=document.querySelector("[user-new-ticket-title]");
+var userLastTicketsTitle=document.querySelector("[user-last-tickets-title]");
+
+var userTicketRows=document.querySelectorAll("div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container>div.user-ticket-row");
+var userNewTicket=document.querySelector("[user-new-ticket]");
+var userLastTickets=document.querySelector("[user-last-tickets]");
+var ticketRowsNum;
+
+
+userNewTicketTitle.addEventListener("click",userNewTicketOpen);
+userLastTicketsTitle.addEventListener("click",userLastTicketsOpen);
+
+function userNewTicketOpen(){
+    closeUserTicketRows();
+    userNewTicket.classList.add("user-ticket-row-show");
+    userNewTicketTitle.classList.add("user-ticket-title-light");
+}
+function userLastTicketsOpen(){
+    closeUserTicketRows();
+    userLastTickets.classList.add("user-ticket-row-show");
+    userLastTicketsTitle.classList.add("user-ticket-title-light");
+}
+
+function closeUserTicketRows(){
+    for(ticketRowsNum=0;ticketRowsNum<userTicketRows.length;ticketRowsNum++){
+        var userTicketRow=userTicketRows[ticketRowsNum];
+        if(userTicketRow.classList.contains("user-ticket-row-show")){
+            userTicketRow.classList.remove("user-ticket-row-show");
+        }
+    }
+    userNewTicketTitle.classList.remove("user-ticket-title-light");
+    userLastTicketsTitle.classList.remove("user-ticket-title-light");
+
+
+
+}
+closeUserTicketRows();
+userNewTicket.classList.add("user-ticket-row-show");
+userNewTicketTitle.classList.add("user-ticket-title-light");
+
+
+
+
+
+
+
+
+
 var avaterSaveButton=0;
 var userAvatarSelect=document.querySelector("#user-avatar-select");
 document.querySelector("button.save-avatar").setAttribute("disabled","");

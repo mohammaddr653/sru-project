@@ -290,12 +290,14 @@ div#main-container>div.account-container>div.row>div.account-main>div{
     position: absolute;
     visibility: hidden;
     opacity: 0;
-    transition: all .3s;
+    display: none;
     padding: 0;
 }
 div#main-container>div.account-container>div.row>div.account-main>div.account-main-show{
     visibility: visible;
     opacity: 1;
+    display: block;
+
 }
 
 
@@ -627,21 +629,16 @@ div#main-container>div.account-container>div.row>div.account-main>div.my-course-
     padding: 0 20px;
 }
 div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul::-webkit-scrollbar {
-    /* background-color: rgba(174, 255, 0, 0.619); */
-
     width: 5px;
 }
 div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul::-webkit-scrollbar-thumb{
 
     background-color: #999;
-    /* width: 5px; */
     border-radius: 30px;
-    /* transition: all 1.3s; */
 
 }
 div#main-container>div.account-container>div.row>div.account-main>div.my-course-container>div.my-course-list>ul::-webkit-scrollbar-thumb:hover{
-    background-color: whitesmoke;
-    /* transition: all 1.3s; */
+    background-color: rgba(59, 41, 41, 0.655)
 
 }
 
@@ -718,6 +715,87 @@ div#main-container>div.account-container>div.row>div.account-main>div.my-course-
 
 
 /* finish my course */
+
+
+/* start user ticket */
+
+
+
+div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container{
+    background-color: white;
+    /* box-shadow: inset 0 0 10px 1px #d3d3d3; */
+    /* outline: inset 1px solid black; */
+}
+div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container>div.user-ticket-titles{
+    /* background-color: white; */
+    width: 90%;
+    margin: 30px auto;
+    margin-bottom: 0;
+    /* border-radius: 10px 10px 0 0; */
+    overflow: hidden;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d3d3d3;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container>div.user-ticket-titles div.col{
+    margin: 0 10px !important;
+    background-color: white;
+    padding: 0;
+    border-radius: 10px ;
+    transition: all .3s;
+    /* border-radius: 30px; */
+}
+div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container>div.user-ticket-titles div.user-ticket-title-light{
+    background-color: #222;
+    color: whitesmoke;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container>div.user-ticket-titles div.col p{
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    /* background-color: yellow; */
+}
+div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container>div.user-ticket-row{
+    width: 90%;
+    margin: 0 auto;
+    /* height: 80%; */
+    position: absolute;
+    left: 50%;
+    margin-left: -45%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+    background-color: green;
+    padding: 0;
+    border-radius: 0 0 20px 20px;
+
+}
+div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container>div.user-ticket-row.user-ticket-row-show{
+    visibility: visible ;
+    /* background-color: red; */
+    opacity: 1;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container>div.user-new-ticket{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    background-color: red;
+    padding-bottom: 20px;
+}
+
+
+div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container>div.user-last-tickets{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* finish user ticket */
+
 
 
 
