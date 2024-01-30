@@ -66,22 +66,49 @@ div#header-container>div.container>div.row>div.col-1{
     text-align: center;
 
 }
-div#header-container>div.container>div.row>div.col-11{
+div#header-container>div.container>div.row>div.header-nav{
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
 }
-div#header-container>div.container>div.row>div.col-11>ul{
+div#header-container>div.container>div.row>div.header-nav>ul{
     margin: 0 5px;
+    flex-wrap: nowrap;
+    display: flex;
 }
-div#header-container>div.container>div.row>div.col-11>ul>li{
+div#header-container>div.container>div.row>div.header-nav>ul>li{
     display: inline-block;
 }
-div#header-container>div.container>div.row>div.col-11>ul>li>a{
+div#header-container>div.container>div.row>div.header-nav>ul>li>a{
     margin: 0 5px;
     padding: 25px 10px;
     display: block;
     font-family: "iransans";
     color: #d3d3d3;
+}
+div#header-container>div.container>div.row>div.header-account{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* background-color: red; */
+}
+div#header-container>div.container>div.row>div.header-account>span>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: rgba(245, 245, 245, 0);
+    color: #d3d3d3;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: all .3s;
+    /* flex-wrap: nowrap; */
+    /* word-break:keep-all; */
+}
+div#header-container>div.container>div.row>div.header-account>span>a:hover{
+    transform: scale(1.1);
+    color: white;
 }
 div#header-container>div.mob-container{
     display: flex;
@@ -200,10 +227,27 @@ div#main-container{
 }
 div#main-container>div.account-container>h3{
     /* background-color: red; */
-    padding: 20px 0;
+    padding: 20px 10px;
     color: #222;
     font-size: 23px;
-
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    justify-content: space-between;
+    /* background-color: red; */
+}
+span#account-exit{
+    background-color: #dc3545;
+    border-radius: 10px;
+    font-size: 16px;
+    width: fit-content;
+    padding: 10px 20px;
+    color: whitesmoke;
+    transition: all .3s;
+    cursor: pointer;
+}
+span#account-exit:hover{
+    background-color: #ea2539;
 }
 
 div#main-container>div.account-container{

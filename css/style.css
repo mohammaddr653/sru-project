@@ -42,12 +42,14 @@ div#header-container{
     position: fixed;
     z-index: 4;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.285);
+    background-color: #111;
     transition: all .5s;
+    top: 0;
 
 }
 div#header-container.header-container-change{
-    background-color: #111;
+    /* background-color: rgba(0, 0, 0, 0.285); */
+    top: -80px;
 }
 div#header-container>div.container>div.row>div{
     padding: 0px;
@@ -59,22 +61,49 @@ div#header-container>div.container>div.row>div.col-1{
     text-align: center;
 
 }
-div#header-container>div.container>div.row>div.col-11{
+div#header-container>div.container>div.row>div.header-nav{
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
 }
-div#header-container>div.container>div.row>div.col-11>ul{
+div#header-container>div.container>div.row>div.header-nav>ul{
     margin: 0 5px;
+    flex-wrap: nowrap;
+    display: flex;
 }
-div#header-container>div.container>div.row>div.col-11>ul>li{
+div#header-container>div.container>div.row>div.header-nav>ul>li{
     display: inline-block;
 }
-div#header-container>div.container>div.row>div.col-11>ul>li>a{
+div#header-container>div.container>div.row>div.header-nav>ul>li>a{
     margin: 0 5px;
     padding: 25px 10px;
     display: block;
     font-family: "iransans";
     color: #d3d3d3;
+}
+div#header-container>div.container>div.row>div.header-account{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* background-color: red; */
+}
+div#header-container>div.container>div.row>div.header-account>span>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: rgba(245, 245, 245, 0);
+    color: #d3d3d3;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: all .3s;
+    /* flex-wrap: nowrap; */
+    /* word-break:keep-all; */
+}
+div#header-container>div.container>div.row>div.header-account>span>a:hover{
+    transform: scale(1.1);
+    color: white;
 }
 div#header-container>div.mob-container{
     display: flex;

@@ -181,51 +181,6 @@ userOmomiTitle.classList.add("user-info-title-light");
 
 
 
-var userNewTicketTitle=document.querySelector("[user-new-ticket-title]");
-var userLastTicketsTitle=document.querySelector("[user-last-tickets-title]");
-
-var userTicketRows=document.querySelectorAll("div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container>div.user-ticket-row");
-var userNewTicket=document.querySelector("[user-new-ticket]");
-var userLastTickets=document.querySelector("[user-last-tickets]");
-var ticketRowsNum;
-
-
-userNewTicketTitle.addEventListener("click",userNewTicketOpen);
-userLastTicketsTitle.addEventListener("click",userLastTicketsOpen);
-
-function userNewTicketOpen(){
-    closeUserTicketRows();
-    userNewTicket.classList.add("user-ticket-row-show");
-    userNewTicketTitle.classList.add("user-ticket-title-light");
-    // newTicketCheck();
-}
-function userLastTicketsOpen(){
-    closeUserTicketRows();
-    userLastTickets.classList.add("user-ticket-row-show");
-    userLastTicketsTitle.classList.add("user-ticket-title-light");
-}
-
-function closeUserTicketRows(){
-    for(ticketRowsNum=0;ticketRowsNum<userTicketRows.length;ticketRowsNum++){
-        var userTicketRow=userTicketRows[ticketRowsNum];
-        if(userTicketRow.classList.contains("user-ticket-row-show")){
-            userTicketRow.classList.remove("user-ticket-row-show");
-        }
-    }
-    userNewTicketTitle.classList.remove("user-ticket-title-light");
-    userLastTicketsTitle.classList.remove("user-ticket-title-light");
-
-
-
-}
-closeUserTicketRows();
-userNewTicket.classList.add("user-ticket-row-show");
-userNewTicketTitle.classList.add("user-ticket-title-light");
-
-
-
-
-
 
 
 
@@ -272,6 +227,54 @@ function avaterSaveButtonOnOff(){
 }
 
 
+
+                                                // تیکت
+
+
+
+var userNewTicketTitle=document.querySelector("[user-new-ticket-title]");
+var userLastTicketsTitle=document.querySelector("[user-last-tickets-title]");
+
+var userTicketRows=document.querySelectorAll("div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container>div.user-ticket-row");
+var userNewTicket=document.querySelector("[user-new-ticket]");
+var userLastTickets=document.querySelector("[user-last-tickets]");
+var ticketRowsNum;
+
+
+userNewTicketTitle.addEventListener("click",userNewTicketOpen);
+userLastTicketsTitle.addEventListener("click",userLastTicketsOpen);
+
+function userNewTicketOpen(){
+    closeUserTicketRows();
+    userNewTicket.classList.add("user-ticket-row-show");
+    userNewTicketTitle.classList.add("user-ticket-title-light");
+    // newTicketCheck();
+}
+function userLastTicketsOpen(){
+    closeUserTicketRows();
+    userLastTickets.classList.add("user-ticket-row-show");
+    userLastTicketsTitle.classList.add("user-ticket-title-light");
+}
+
+function closeUserTicketRows(){
+    for(ticketRowsNum=0;ticketRowsNum<userTicketRows.length;ticketRowsNum++){
+        var userTicketRow=userTicketRows[ticketRowsNum];
+        if(userTicketRow.classList.contains("user-ticket-row-show")){
+            userTicketRow.classList.remove("user-ticket-row-show");
+        }
+    }
+    userNewTicketTitle.classList.remove("user-ticket-title-light");
+    userLastTicketsTitle.classList.remove("user-ticket-title-light");
+
+
+
+}
+closeUserTicketRows();
+userNewTicket.classList.add("user-ticket-row-show");
+userNewTicketTitle.classList.add("user-ticket-title-light");
+
+
+
 var newTicketTitle = document.getElementById("new-ticket-title");
 var newTicketBox= document.getElementById('new-ticket-box');
 var newTicketSubmit= document.getElementById('new-ticket-submit');
@@ -304,14 +307,18 @@ function checkLastTicketsEmpty(){
 function addToLastTickets(){
 
 
+                                                                                                                            // "بعد از کلیک روی دکمه ارسال تیکت ، این تابع اجرا میشه . "
+                                                                                                                            // "قبل از اجرا شدن این تابع باید اطلاعات به سرور ارسال و در صورت ذخیره موفق در سرور این تابع را فراخوانی کنید"
+                                                                                                                            //مقادیر آزمایشی باید توسط بک اند تنظیم و مقدار دهی شود .
+
     var newLastTicket=lastTicketsTemplate.content.cloneNode(true).children[0];
     console.log(newLastTicket);
     var lastTicketCode=newLastTicket.querySelector("[last-ticket-code]");
-    lastTicketCode.textContent="#400";
+    lastTicketCode.textContent="#400";          // آزمایشی//
     var lastTicketTitle=newLastTicket.querySelector("[last-ticket-title]");
     lastTicketTitle.textContent=newTicketTitle.value;
     var lastTicketAnswered=newLastTicket.querySelector("[last-ticket-answered]");
-    lastTicketAnswered.classList.add("last-ticket-answered-show");
+    lastTicketAnswered.classList.add("last-ticket-answered-show");  //آزمایشی//
     userLastTickets.append(newLastTicket);
     newTicketInputClear();
     checkLastTicketsEmpty();
@@ -322,6 +329,11 @@ function newTicketInputClear(){
     newTicketBox.value="";
     newTicketCheck();
 }
+
+
+
+                                            // تیکت
+
 
 
 
