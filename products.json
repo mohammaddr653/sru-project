@@ -1,0 +1,35 @@
+[
+    {
+        "id":"#100",
+        "name":"samsung s23 ultra",
+        "price":"2000000",
+        "teacher":"مهندس امین سعیدی",
+        "buyers":["#30"]
+    },
+    {
+        "id":"#200",
+        "name":"iphone",
+        "price":"3000000",
+        "teacher":"دکتر آرش محمدی",
+        "buyers":["#31"]
+
+    },
+    {
+        "id":"#300",
+        "name":"sony xperia z3",
+        "price":"4000000",
+        "teacher":"دکتر شعبان علیاری",
+        "buyers":["#30"]
+
+    },
+    {
+        "id":"#400",
+        "name":"fluid mechanics 1",
+        "price":"5000000",
+        "teacher":"دکتر شعبان علیاری",
+        "buyers":["#31"]
+
+    }
+
+
+]

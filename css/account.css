@@ -968,6 +968,26 @@ div#main-container>div.account-container>div.row>div.account-main>div.user-ticke
 
 
 
+/* start user cart */
+
+
+div#main-container>div.account-container>div.row>div.account-main>div.user-cart-container{
+    background-color: white;
+    padding: 20px;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.user-cart-container>table{
+    background-color: rgb(104, 230, 241);
+    border-radius: 10px;
+    overflow: hidden;
+}   
+div#main-container>div.account-container>div.row>div.account-main>div.user-cart-container>table td.user-buyOrnot-false>a{    /* توسط جاوا اسکریپت ساخته میشه */
+    color: blue;
+} 
+
+
+/* finish user cart */
+
+
 
 /* finish account main */
 

@@ -380,7 +380,21 @@
                                 </template>
                             </div>
                         </div>
-                        <div class="user-cart-container container-fluid bg-success">cart</div>
+                        <div class="user-cart-container container-fluid">
+                            <table class="table">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th scope="col">عنوان دوره</th>
+                                        <th scope="col">مدرس</th>
+                                        <th scope="col">قیمت</th>
+                                        <th scope="col">وضعیت</th>
+                                    </tr>
+                                </thead>
+                                <tbody user-cart-tbody>
+                                    <!-- بطور داینامیک خوانده میشود  -->
+                                </tbody>
+                            </table>
+                        </div>
                     </div>    
                 </div>
             </div>
@@ -566,6 +580,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/search.js"></script>
+    <script src="js/getUser.js"></script>
     <script src="js/account.js"></script>
 </body>
 </html>
