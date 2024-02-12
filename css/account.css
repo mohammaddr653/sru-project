@@ -980,7 +980,7 @@ div#main-container>div.account-container>div.row>div.account-main>div.user-cart-
     border-radius: 10px;
     overflow: hidden;
 }   
-div#main-container>div.account-container>div.row>div.account-main>div.user-cart-container>table td.user-buyOrnot-false>a{    /* توسط جاوا اسکریپت ساخته میشه */
+div#main-container>div.account-container>div.row>div.account-main>div.user-cart-container>table td>a.user-buyOrnot-false{    /* توسط جاوا اسکریپت ساخته میشه */
     color: blue;
 } 
 

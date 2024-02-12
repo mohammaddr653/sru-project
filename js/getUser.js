@@ -1,11 +1,11 @@
-let getUserName;
+let getUserName;                                                    //شماره تلفن گرفته میشه از بخش لاگین . میاد اینجا و یه حلقه میزنیم روی فایل یوزر هامون تا بفهمیم شماره مال کدومشون بوده . وقتی فهمیدیم بقیه اطلاعات یوزر رو در میاریم و به آبجکت گلوبال میدیم تا همه جا بتونیم به اطلاعات یوزرمون دسترسی داشته باشیم
 let getUserId;
-let getUserCart;
+let getUserCart;                                                    //این صفحه کارش همینه فقط . اطلاعات یوزری که لاگین کرده رو بگیره و توی آبجکت گلوبال بذاره 
 let getUserPhoneNumber;
 async function getUserInfo(phone,url){
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     for(const user of data){
         if(user.phoneNumber===phone){
             console.log("user #30 is connect");
@@ -21,63 +21,10 @@ function setUserInfo(userId,userName,userCart,userPhone){
     getUserId=userId;
     getUserCart=userCart;
     getUserPhoneNumber=userPhone;
-    createCart();
+                                                                 //اطلاعات یوزر را در گلوبال آبجکت قرار میدیم تا بعدا هر جا دسترسی داشته باشیم بهش
+    Object.prototype.globalUserId=userId;
+    Object.prototype.globalUserName=userName;
+    Object.prototype.globalUserCart=userCart;
+    Object.prototype.globalUserPhone=userPhone;
     // console.log(getUserName,getUserId,getUserPhoneNumber,getUserCart);
-}
-
-
-
-
-function createCart(){
-    let userCartTbody=document.querySelector("[user-cart-tbody]");
-
-
-    let userId=getUserId;            // آی دی یوزر را میگیریم تا بفهمیم که آیا این دوره را خریداری کرده یا نه 
-
-    async function createUserCartTable(url){
-        const response = await fetch(url);
-        const data = await response.json();
-        console.log(data);
-        for(const product of data){
-            let buyOrnot=false;
-            if(getUserCart.includes(product.id)){
-                console.log(product.id);
-                checkBuyOrnot();
-            }
-            function checkBuyOrnot(){
-                if(product.buyers.includes(userId)){
-                    buyOrnot=true;
-                }else{
-                    buyOrnot=false;
-                }
-                if(buyOrnot){
-                    userCartTbody.innerHTML +=
-                    `
-                    <tr>
-                        <td>${product.name}</td>
-                        <td>${product.teacher}</td>
-                        <td>${product.price}</td>
-                        <td class="user-buyOrnot-true">خریداری شده</td>
-                    </tr>
-                    
-                    `    
-    
-                }else{
-                    userCartTbody.innerHTML +=
-                    `
-                    <tr>
-                        <td>${product.name}</td>
-                        <td>${product.teacher}</td>
-                        <td>${product.price}</td>
-                        <td class="user-buyOrnot-false"><a href="https://digikala.com">پرداخت</a></td>
-                    </tr>
-                    
-                    `    
-                }
-    
-            }
-
-        }
-    }
-    createUserCartTable("./products.json");
 }
