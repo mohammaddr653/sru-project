@@ -53,8 +53,6 @@ function setScrollOptions(){
 }
 setScrollOptions();
 
-
-
 var userInfo=document.querySelector("[user-info]");
 var userPanel=document.querySelector("[user-panel]");
 var myCourse=document.querySelector("[my-course]");
@@ -188,8 +186,7 @@ userOmomiTitle.classList.add("user-info-title-light");
 var avaterSaveButton=0;
 var userAvatarSelect=document.querySelector("#user-avatar-select");
 document.querySelector("button.save-avatar").setAttribute("disabled","");
-var nowAvatar=document.querySelector("#bio-avatar").src;
-document.querySelector("#user-avatar-select").src=nowAvatar;
+
 function readURL(input) {
     if (input.files && input.files[0]) {
     
