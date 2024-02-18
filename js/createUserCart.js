@@ -11,6 +11,33 @@ async function getProductsData(productId,url){
         }
     }
 }
+getProductsData("#100","./products.json");            //فرضی داده شده وگرنه باید بعد از کلیک روی کارت محصول این تابع با پارامتر های مختص همون محصول فراخوانی بشه 
+getProductsData("#200","./products.json");
+getProductsData("#300","./products.json");
+getProductsData("#200","./products.json");
+getProductsData("#300","./products.json");
+getProductsData("#200","./products.json");
+getProductsData("#300","./products.json");
+getProductsData("#200","./products.json");
+getProductsData("#300","./products.json");
+getProductsData("#200","./products.json");
+getProductsData("#300","./products.json");
+getProductsData("#200","./products.json");
+getProductsData("#300","./products.json");
+getProductsData("#100","./products.json");            //فرضی داده شده وگرنه باید بعد از کلیک روی کارت محصول این تابع با پارامتر های مختص همون محصول فراخوانی بشه 
+getProductsData("#200","./products.json");
+getProductsData("#300","./products.json");
+getProductsData("#200","./products.json");
+getProductsData("#300","./products.json");
+getProductsData("#200","./products.json");
+getProductsData("#300","./products.json");
+getProductsData("#200","./products.json");
+getProductsData("#300","./products.json");
+getProductsData("#200","./products.json");
+getProductsData("#300","./products.json");
+getProductsData("#200","./products.json");
+getProductsData("#300","./products.json");
+
 function addToCart(productId,productName,productPrice,productTeacher,productBuyers){
     userCartTbody.innerHTML +=
         `

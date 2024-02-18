@@ -81,10 +81,10 @@
     <main>
         <div id="main-container">
             <div class="account-container container">
-                <h3 class="col-3">حساب کاربری <span id="account-exit">خروج از حساب</span></h3>
+                <h3 class="col-12 col-lg-3">حساب کاربری <span id="account-exit">خروج از حساب</span></h3>
                 
                 <div class="row">
-                    <div class="account-side col-3">
+                    <div class="account-side  col-12 col-lg-3">
                         <div class="bio container-fluid">
                             <div class="row">
                                 <div class="col-12 text-center">
@@ -125,7 +125,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="account-main col-9">
+                    <div class="account-main col-12 col-lg-9">
                         <div class="user-info-container container-fluid">
                             <div class="row user-info-titles">
                                 <div class="col" user-omomi-title>
@@ -381,31 +381,27 @@
                             </div>
                         </div>
                         <div class="user-cart-container container-fluid">
-                            <table class="table">
-                                <thead class="table-dark">
-                                    <tr>
-                                        <th scope="col">عنوان دوره</th>
-                                        <th scope="col">مدرس</th>
-                                        <th scope="col">قیمت</th>
-                                        <th scope="col">وضعیت</th>
-                                    </tr>
-                                </thead>
-                                <tbody user-cart-tbody>
-                                    <!-- بطور داینامیک خوانده میشود  -->
-                                </tbody>
-                            </table>
+                            <div class="table-overflow">
+                                <table class="table">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th scope="col">عنوان دوره</th>
+                                            <th scope="col">مدرس</th>
+                                            <th scope="col">قیمت</th>
+                                            <th scope="col">وضعیت</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody user-cart-tbody>
+                                        <!-- بطور داینامیک خوانده میشود  -->
+                                    </tbody>
+                                </table>    
+                            </div>
 
-                            <div class="product-example" product-example>
-                                <!-- <div class="product" onclick="getProduct(event)">
-                                    <h6 product-tit>گوشی موبایل سونی </h6>
-                                    <img src="images/243125.jpg" width="100%" alt="" product-img>
-                                    <p product-price>3000000</p>    
-                                </div> -->
+                            <!-- <div class="product-example" product-example>
                             </div>
                             <style>
                                 div.product-example{
                                     background-color: red;
-                                    /* width: 200px; */
                                     display: flex;
                                     flex-direction: row;
                                     gap: 20px;
@@ -414,7 +410,7 @@
                                     background-color: yellow;
                                     width: 200px;
                                 }
-                            </style>
+                            </style> -->
                         </div>
                     </div>    
                 </div>
@@ -601,7 +597,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/search.js"></script>
-    <script src="js/product example.js"></script>
+    <!-- <script src="js/product example.js"></script> -->
     <script src="js/getUser.js"></script>
     <script src="js/createUserCart.js"></script>
     <script src="js/account.js"></script>

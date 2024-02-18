@@ -328,6 +328,14 @@ div#main-container>div.account-container>div.row>div.account-main{
     border: 10px solid rgb(238, 238, 238);
     /* word-spacing: 1px; */
 }
+@media screen and (max-width: 992px) {
+    div#main-container>div.account-container>div.row>div.account-main{
+        height: 90vh;
+    }
+        
+
+}
+
 div#main-container>div.account-container>div.row>div.account-main>div{
     width: 100%;
     height: 100%;
@@ -398,6 +406,17 @@ div#main-container>div.account-container>div.row>div.account-main>div.user-info-
     border-radius: 0 0 20px 20px;
 
 }
+@media screen and (max-width: 992px) {
+    div#main-container>div.account-container>div.row>div.account-main>div.user-info-container>div.user-info-row{
+        height: 80%;
+        /* background-color: red; */
+        bottom: 20px;
+    
+    }
+            
+
+}
+
 div#main-container>div.account-container>div.row>div.account-main>div.user-info-container>div.user-info-row.user-info-row-show{
     visibility: visible ;
     opacity: 1;
@@ -463,6 +482,18 @@ div#main-container>div.account-container>div.row>div.account-main>div.user-info-
     align-items: center;
     justify-content: center;
 }
+@media screen and (max-width: 992px) {
+    div#main-container>div.account-container>div.row>div.account-main>div.user-info-container>div.user-info-avatar{
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+                
+
+}
+
 div#main-container>div.account-container>div.row>div.account-main>div.user-info-container>div.user-info-avatar>div.user-avatar-box{
     /* border-radius: 100%; */
     overflow: hidden;
@@ -607,6 +638,11 @@ div#main-container>div.account-container>div.row>div.account-main>div.user-panel
     height: 70%;
     overflow-y: scroll;
     margin: 20px 10px;
+}
+@media screen and (max-width: 992px) {
+    div#main-container>div.account-container>div.row>div.account-main>div.user-panel-container>div.panel-main{
+        padding: 0;
+    }
 }
 div#main-container>div.account-container>div.row>div.account-main>div.user-panel-container>div.panel-main::-webkit-scrollbar {
     /* background-color: rgba(174, 255, 0, 0.619); */
@@ -831,7 +867,8 @@ div#main-container>div.account-container>div.row>div.account-main>div.user-ticke
 }
 div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container>div.user-new-ticket>input#new-ticket-title{
     width: 50%;
-    margin: 10px;
+    margin: 10px 0;
+    margin-bottom: 20px;
     outline: none;
     border: none;
     height: 50px;
@@ -842,7 +879,7 @@ div#main-container>div.account-container>div.row>div.account-main>div.user-ticke
 }
 div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container>div.user-new-ticket>textarea#new-ticket-box{
     width: 100%;
-    margin: 10px;
+    margin: 10px 0;
     outline: none;
     border: none;
     height: 200px;
@@ -862,9 +899,9 @@ div#main-container>div.account-container>div.row>div.account-main>div.user-ticke
     border: none;
     box-shadow: 0 0 1px 1px #d3d3d3;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
-    margin: 10px;
+    /* margin: 10px; */
     transition: all .3s;
 }
 div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container>div.user-new-ticket>button#new-ticket-submit.new-ticket-submit-light{
@@ -888,13 +925,11 @@ div#main-container>div.account-container>div.row>div.account-main>div.user-ticke
     flex-wrap: nowrap;
     align-items: center;
     gap: 10px;
-}
-div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container>div.user-last-tickets{
-    /* background-color: red; */
-    padding: 20px;
+    padding: 0;
     height: 70%;
     overflow-y: scroll;
     margin-top: 20px;
+
 }
 div#main-container>div.account-container>div.row>div.account-main>div.user-ticket-container>div.user-last-tickets::-webkit-scrollbar {
     /* background-color: rgba(174, 255, 0, 0.619); */
@@ -975,21 +1010,46 @@ div#main-container>div.account-container>div.row>div.account-main>div.user-cart-
     background-color: white;
     padding: 20px;
 }
-div#main-container>div.account-container>div.row>div.account-main>div.user-cart-container>table{
-    background-color: rgb(104, 230, 241);
+div#main-container>div.account-container>div.row>div.account-main>div.user-cart-container>div.table-overflow{
+    overflow-y: scroll;
+    height: 100%;
+    padding: 0 5px;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.user-cart-container>div.table-overflow>table{
     border-radius: 10px;
     overflow: hidden;
 }   
-div#main-container>div.account-container>div.row>div.account-main>div.user-cart-container>table td>a.user-buyOrnot-false{    /* توسط جاوا اسکریپت ساخته میشه */
+div#main-container>div.account-container>div.row>div.account-main>div.user-cart-container>div.table-overflow::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.user-cart-container>div.table-overflow::-webkit-scrollbar-thumb{
+    background-color: #999;
+    border-radius: 30px;
+
+}
+div#main-container>div.account-container>div.row>div.account-main>div.user-cart-container>div.table-overflow::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(59, 41, 41, 0.655)
+
+}
+
+div#main-container>div.account-container>div.row>div.account-main>div.user-cart-container>div.table-overflow>table>tbody{
+    background-color: #EEEEEE;
+}
+div#main-container>div.account-container>div.row>div.account-main>div.user-cart-container>div.table-overflow>table td>a.user-buyOrnot-false{    /* توسط جاوا اسکریپت ساخته میشه */
     color: blue;
 } 
+
 
 
 /* finish user cart */
 
 
 
+
+
 /* finish account main */
+
 
 
 /* finish main */
