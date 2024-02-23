@@ -93,7 +93,7 @@ var myScrollFunc = function () {
     }
 
 };
-window.addEventListener("scroll", myScrollFunc);
+// window.addEventListener("scroll", myScrollFunc);
 
 
 
