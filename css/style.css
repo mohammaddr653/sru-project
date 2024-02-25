@@ -24,12 +24,61 @@ h1,h2,h3,h4,h5,h6{
     padding: 0;
 }
 body{
-    background-color: rgb(238, 238, 238);
+    background-color: white;
     overflow-x: hidden;
 }
 a:hover{
     color: inherit;
 }
+
+
+/* start pre loader */
+
+
+div#preloader-container{
+    position: fixed;
+    width: 100%;
+    /* top: 0; */
+    background: #000 url("../images/background-preloader.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    z-index: 10;
+    height: 100vh;
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s;
+
+    /* background-color: black; */
+}
+div#preloader-container.preloader-hide{
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    /* z-index: -1; */
+    transition: all .7s;
+
+}
+div#preloader-container>div.loader-element{
+    /* position: relative; */
+    /* top: 60%; */
+    margin: 40px 0;
+    width: 50px;
+    height: 50px;
+    /* top: 0; */
+    background: url("../images/1494.gif") no-repeat center center;
+    background-size: cover;
+    z-index: 10;
+    display: block;
+
+}
+
+
+
+
+
+/* finish pre loader */
 
 
 
@@ -220,12 +269,14 @@ div#bg-dark-menu.bg-dark-menu-show{
 div#main-container{
     /* position: relative; */
     background-color: yellow;
+    margin-bottom: 100px;
     /* overflow: hidden; */
     /* height: 100vh; */
 }
 div#main-container div#parts-carousel{
-    background-color: red;
-    padding: 100px 0;
+    background-color:white ;
+    /* padding: 100px 0; */
+
 }
 div#main-container div.background-img{
     width: 100vw;
@@ -244,7 +295,12 @@ div#main-container div#parts-carousel div.departmans{
     margin: 0 auto;
     /* padding: 50px 0; */
     /* height: 30030px; */
-    background-color: blue;
+    /* background-color: blue; */
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 20px; */
     /* position: absolute; */
     /* visibility: hidden; */
     /* opacity : 0;  */

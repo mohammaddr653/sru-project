@@ -12,7 +12,16 @@ var mobCloseButton=document.querySelector("[mob-close-button]");
 var mobMenu=document.querySelector("div#mob-menu");
 var bgDarkMenu=document.getElementById("bg-dark-menu");
 var bgImage=document.querySelector("[background-image]");
+let preloaderContainer= document.getElementById("preloader-container");
 
+body.style.overflowY="hidden";
+window.addEventListener("load", function(){
+    setTimeout(function(){
+        preloaderContainer.classList.add("preloader-hide");
+        body.style.overflowY="scroll";
+      //تایم اوت باید برداشته شه . اینو  دادم صرفا برای اینکه تایم لودمون بیشتر باشه بتونیم تصویر رو ببینیم
+    },2000)
+})
 
 function myFunction(x) {
     if (x.matches) { // If media query matches
@@ -52,52 +61,11 @@ function mobMenuClose(){
 }
 
 amoozeshIcon.addEventListener("click",function(){
-    window.scrollTo({ top: 20, behavior: 'smooth'})
+    window.scrollTo({ top: 400, behavior: 'smooth'})
 });
 parvareshIcon.addEventListener("click",function(){
-    window.scrollTo({ top: 120, behavior: 'smooth'})
+    window.scrollTo({ top: 850, behavior: 'smooth'})
 });
-var myScrollFunc = function () {
-    var y = window.scrollY;
-    if (y>=20 && !searchBar.classList.contains("search-container-show")) {
-        bgDark.classList.add("bg-dark-show");
-        headerContainer.classList.add("header-container-change");
-        departmans[0].classList.add("dep-amozesh-show");
-        amoozeshIcon.classList.add("amoozesh-icon-light");
-    } else if(!searchBar.classList.contains("search-container-show")){
-        bgDark.classList.remove("bg-dark-show");
-        headerContainer.classList.remove("header-container-change");
-        departmans[0].classList.remove("dep-amozesh-show");
-        amoozeshIcon.classList.remove("amoozesh-icon-light");
-
-    }
-    if (y>=120 && !searchBar.classList.contains("search-container-show")) {
-        departmans[0].classList.remove("dep-amozesh-show");
-        amoozeshIcon.classList.remove("amoozesh-icon-light");
-        departmans[1].classList.add("dep-parvaresh-show");
-        if(!footerContainer.classList.contains("footer-container-goesup")){
-            parvareshIcon.classList.add("parvaresh-icon-light");
-        }
-    } else {
-        departmans[1].classList.remove("dep-parvaresh-show");
-        parvareshIcon.classList.remove("parvaresh-icon-light");
-
-    }
-    if (y>=220){
-        footerContainer.classList.add("footer-container-goesup");
-        departmans[1].classList.remove("dep-parvaresh-show");
-        parvareshIcon.classList.remove("parvaresh-icon-light");
-
-    }else{
-        footerContainer.classList.remove("footer-container-goesup");
-    }
-
-};
-// window.addEventListener("scroll", myScrollFunc);
-
-
-
-
 var searchShowIcon=document.querySelector("div#page-bar div.bar-container>div.search-container>svg.search-icon");
 var searchBar=document.querySelector("div#page-bar div.bar-container>div.search-container");
 var searchCloseIcon=document.querySelector("div#page-bar div.bar-container>div.search-container>svg.close-icon");
@@ -107,8 +75,6 @@ searchShowIcon.addEventListener("click",function(){
     bgDark.classList.add("bg-dark-show");
     headerContainer.classList.add("header-container-change");
     searchBar.classList.add("search-container-show");
-    departmans[0].classList.remove("dep-amozesh-show");
-    departmans[1].classList.remove("dep-parvaresh-show");
     searchResults.classList.add("search-results-show");
     body.style.overflowY="hidden";    
 });
@@ -118,7 +84,6 @@ searchCloseIcon.addEventListener("click",function h(){
     searchBar.classList.remove("search-container-show");
     searchResults.classList.remove("search-results-show");
     body.style.overflowY="scroll";
-    myScrollFunc();
 });
 
 
