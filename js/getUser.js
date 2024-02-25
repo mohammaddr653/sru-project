@@ -1,6 +1,6 @@
-let getUserName;                                                    //شماره تلفن گرفته میشه از بخش لاگین . میاد اینجا و یه حلقه میزنیم روی فایل یوزر هامون تا بفهمیم شماره مال کدومشون بوده . وقتی فهمیدیم بقیه اطلاعات یوزر رو در میاریم و به آبجکت گلوبال میدیم تا همه جا بتونیم به اطلاعات یوزرمون دسترسی داشته باشیم
+let getUserName;                                                  
 let getUserId;
-let getUserCart;                                                    //این صفحه کارش همینه فقط . اطلاعات یوزری که لاگین کرده رو بگیره و توی آبجکت گلوبال بذاره 
+let getUserCart;                                                    
 let getUserPhoneNumber;
 let getUserUserName;
 let getUserEmail;
@@ -27,14 +27,6 @@ function setUserInfo(userId,userName,userUserName,userEmail,userCart,userPhone,u
     getUserUserName=userUserName;
     getUserEmail=userEmail;
     getUserAvatarSrc=userAvatarSrc;
-                                                                 //اطلاعات یوزر را در گلوبال آبجکت قرار میدیم تا بعدا هر جا دسترسی داشته باشیم بهش
-    Object.prototype.globalUserId=userId;
-    Object.prototype.globalUserName=userName;
-    Object.prototype.globalUserCart=userCart;
-    Object.prototype.globalUserPhone=userPhone;
-    Object.prototype.globalUserUserName=userUserName;
-    Object.prototype.globalUserEmail=userEmail;
-    Object.prototype.globalUserAvatarSrc=userAvatarSrc;
     loadUserInformation();
     // console.log(getUserName,getUserId,getUserPhoneNumber,getUserCart);
 }
@@ -45,11 +37,26 @@ let clientUserNameInput=document.querySelector("[client-user-name-input]");
 let clientEmailInput=document.querySelector("[client-email-input]");
 let accountSideAvatar=document.querySelector("[account-side-avatar]");        //اطلاعات حساب کاربری رو بصورت داینامیک میخونه
 function loadUserInformation(){
-    accountSideUserName.innerHTML=Object.globalUserName;
-    clientNameInput.value=Object.globalUserName;
-    clientUserNameInput.value=Object.globalUserUserName;
-    clientEmailInput.value=Object.globalUserEmail;
-    accountSideAvatar.src=Object.globalUserAvatarSrc;
+    accountSideUserName.innerHTML=getUserName;
+    clientNameInput.value=getUserName;
+    clientUserNameInput.value=getUserUserName;
+    clientEmailInput.value=getUserEmail;
+    accountSideAvatar.src=getUserAvatarSrc;
     // let nowAvatar=document.querySelector("#bio-avatar").src;
-    document.querySelector("#user-avatar-select").src=Object.globalUserAvatarSrc;     //تصویر آواتار کاربر رو در قسمت انتخاب آواتار برابر با تصویر آواتار ساید قرار میده
+    document.querySelector("#user-avatar-select").src=getUserAvatarSrc;     //تصویر آواتار کاربر رو در قسمت انتخاب آواتار برابر با تصویر آواتار ساید قرار میده
+}
+
+
+
+function addToCart(productId,productName,productPrice,productTeacher,productBuyers){    // فراخوانی میشه createUserCart.js   از
+    userCartTbody.innerHTML +=
+        `
+            <tr>
+                <td>${productName}</td>
+                <td>${productTeacher}</td>
+                <td>${productPrice}</td>
+                <td>${productBuyers.includes(getUserId)?`<a class="user-buyOrnot-true" href="https://digikala.com">مشاهده</a>`:`<a class="user-buyOrnot-false" href="https://digikala.com">پرداخت</a>`}</td>
+            </tr>
+
+        `
 }

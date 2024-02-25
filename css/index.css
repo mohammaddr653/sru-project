@@ -1,0 +1,129 @@
+/* start main */
+
+
+
+div#main-container{
+    /* position: relative; */
+    background-color: yellow;
+    margin-bottom: 100px;
+    /* overflow: hidden; */
+    /* height: 100vh; */
+}
+div#main-container div#parts-carousel{
+    background-color:white ;
+    /* padding: 100px 0; */
+
+}
+div#main-container div.background-img{
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+
+/* start main-----departmans */
+
+
+
+div#main-container div#parts-carousel div.departmans{
+    text-align: center;
+    width: 100vw;
+    margin: 0 auto;
+    /* padding: 50px 0; */
+    /* height: 30030px; */
+    /* background-color: blue; */
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 20px; */
+    /* position: absolute; */
+    /* visibility: hidden; */
+    /* opacity : 0;  */
+    z-index: 3;
+}
+/* div#main-container div#parts-carousel div.dep-amozesh{
+    top: 50vh;
+    transition:top .5s;
+}
+div#main-container div#parts-carousel div.dep-amozesh-show{
+    visibility: visible;
+    opacity: 1;
+    top: 40vh;
+    transition:all 1s .2s;
+}
+
+div#main-container div#parts-carousel div.dep-parvaresh{
+    top: 65vh;
+    transition:top .5s;
+}
+div#main-container div#parts-carousel div.dep-parvaresh-show{
+    visibility: visible;
+    opacity: 1;
+    top: 55vh;
+    transition:all 1s .2s;
+
+} */
+
+
+div#main-container div#parts-carousel div.departmans>div.dep-car{
+    width: 70vw;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+div#main-container div#parts-carousel div.departmans>div.dep-car div.dep-car-content{
+    background-color: #111;
+    margin: 0 auto;
+
+}
+div#main-container div#parts-carousel div.departmans>div.dep-car div.dep-car-content div.dep-car-con-bg{
+    height: 100%;
+}
+div#main-container div#parts-carousel div.depatrmans>div.dep-car div.dep-car-content div.dep-car-con-bg>a{
+    height: 100%;
+    background-color: rgb(128, 0, 255); 
+    display: block; 
+}
+div#main-container div#parts-carousel div.departmans>div.dep-car div.dep-car-content div.dep-car-con-bg img{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+div#main-container div#parts-carousel div.departmans>div.dep-car div.dep-car-content div.dep-car-con-title>a{
+    display: block;
+    padding: 20px;
+}
+div#main-container div#parts-carousel div.departmans>div.dep-car div.dep-car-content div.dep-car-con-title>a>h5{
+    font-size: 17px;
+    color: #d3d3d3;
+}
+div#main-container div#parts-carousel div.departmans>div.dep-car div.owl-nav>button.owl-next{
+    left: -40px;
+}
+div#main-container div#parts-carousel div.departmans>div.dep-car div.owl-nav>button.owl-prev{
+    right: -40px;
+}
+
+div#main-container div#parts-carousel div.departmans>div.dep-car div.owl-nav>button.owl-next,
+div#main-container div#parts-carousel div.departmans>div.dep-car div.owl-nav>button.owl-prev{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 45px;
+    color: black;
+    
+}
+
+
+/* finish main-----departmans */
+
+
+/* finish main */

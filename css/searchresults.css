@@ -1,0 +1,100 @@
+/* start search results */
+
+
+
+div#search-results{
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    padding-top: 25vh;
+    z-index: 3;
+    top: 40vh;
+    transition:all .7s !important;
+
+
+}
+div.search-results-show{
+    visibility: visible !important;
+    opacity: 1 !important;
+    top: 0 !important;
+}
+div#search-results>h4{
+    padding: 20px 40px;
+    font-size: 20px;
+    color: #333;
+
+}
+div#search-results>div.results{
+    padding: 20px 40px;
+    height: 50vh;
+    overflow: hidden;
+}
+div#search-results>div.results div.owl-carousel{
+    width: 60vw;
+    margin: 0 auto;
+}
+div#search-results>div.results div.result-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+div#search-results>div.results div.result-card>a{
+    display: block;
+    width: 100%;
+    text-align: center;
+
+}
+div#search-results>div.results div.result-card>a>img{
+    width: 100%;
+    margin: 0 auto;
+    aspect-ratio: 1.1;
+    margin-bottom: 10px;
+}
+div#search-results>div.results div.result-card>a>h4{
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 300;
+    padding: 10px;
+    color: #333;
+}
+
+div#search-results div.owl-carousel div.owl-nav>button.owl-next{
+    left: -70px;
+}
+div#search-results div.owl-carousel div.owl-nav>button.owl-prev{
+    right: -70px;
+}
+
+div#search-results div.owl-carousel div.owl-nav>button.owl-next,
+div#search-results div.owl-carousel div.owl-nav>button.owl-prev{
+    width: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 45px;
+    color: black;
+    
+}
+div.owl-stage{
+    margin: 0 auto;
+}
+.owl-theme .owl-controls .owl-nav .disabled{
+	opacity: 0.5;
+	cursor: default;
+}
+.owl-nav .owl-prev.disabled,
+.owl-nav .owl-next.disabled {
+   opacity: .2;
+}
+
+
+/* finish search results */

@@ -1,0 +1,38 @@
+
+/* start bg-dark */
+
+div#bg-dark{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    opacity : 0; 
+    transition:opacity .3s;
+}
+div#bg-dark.bg-dark-show{
+    opacity: 1;
+    z-index: 1;
+}
+div#bg-dark-menu{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000d4;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    display: none;
+    opacity : 0; 
+    transition:opacity .3s;
+}
+div#bg-dark-menu.bg-dark-menu-show{
+    opacity: 1 ;
+    display: block;
+    z-index: 5 ;
+}
+
+
+
+/* finish bg-dark */
+

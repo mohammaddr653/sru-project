@@ -1,0 +1,97 @@
+/* start footer */
+
+
+footer div#footer-container{
+    position: relative;
+    background-color: #222;
+    z-index: 2;
+    padding-bottom: 100px;
+    transition: all .5s;
+    margin-top: 0;
+}
+footer div#footer-container.footer-container-goesup{
+    margin-top: -400px;
+}
+footer div#footer-container div.socials-container{
+    background-color: white;
+    border: 2px solid black;
+    position: relative;
+    bottom: 5vh;
+    text-align: center;
+    width: 50vw;
+    padding: 10px 5vw;
+    border-radius: 50px;
+
+}
+footer div#footer-container div.socials-container div.socials-title{
+    padding: 10px 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    align-content: center;
+}
+footer div#footer-container div.socials-container div.socials-icon{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+footer div#footer-container div.socials-container svg{
+    width: 25px;
+    height: 25px;
+}
+footer div#footer-container div.parts-container{
+    width: 80vw;
+}
+footer div#footer-container div.parts-container>div.row>div{
+    padding: 20px;
+}
+footer div#footer-container div.parts-container>div.row>div>p{
+    text-align: center;
+    margin-bottom: 0px;
+    color: whitesmoke;
+    font-size: 17px;
+}
+footer div#footer-container div.parts-container>div.row>div.permisions>div{
+    display: grid !important;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    
+}
+footer div#footer-container div.parts-container>div.row>div.permisions a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10%;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    width: 100%;
+}
+footer div#footer-container div.parts-container>div.row>div.permisions a img{
+    width: 100%;
+}
+footer div#footer-container div.parts-container>div.row>div:not(div.permisions) a{
+    margin: 10px 0;
+    display: block;
+    color: whitesmoke;
+    font-weight: 200;
+}
+
+
+/* finish footer */
+
+@media screen and (max-width: 1200px) {
+    footer div#footer-container div.socials-container div.socials-title{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    footer div#footer-container div.socials-container{
+        width: 90vw;
+    }
+
+}

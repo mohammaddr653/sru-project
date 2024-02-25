@@ -1,0 +1,142 @@
+/* start header */
+
+
+
+
+div#header-container{
+    position: fixed;
+    z-index: 4;
+    width: 100vw;
+    background-color: #111;
+    transition: all .5s;
+    top: 0;
+
+}
+div#header-container.header-container-change{
+    /* background-color: rgba(0, 0, 0, 0.285); */
+    top: -80px;
+}
+div#header-container>div.container>div.row>div{
+    padding: 0px;
+}
+div#header-container>div.container>div.row>div.col-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+div#header-container>div.container>div.row>div.header-nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+div#header-container>div.container>div.row>div.header-nav>ul{
+    margin: 0 5px;
+    flex-wrap: nowrap;
+    display: flex;
+}
+div#header-container>div.container>div.row>div.header-nav>ul>li{
+    display: inline-block;
+}
+div#header-container>div.container>div.row>div.header-nav>ul>li>a{
+    margin: 0 5px;
+    padding: 25px 10px;
+    display: block;
+    font-family: "iransans";
+    color: #d3d3d3;
+}
+div#header-container>div.container>div.row>div.header-account{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* background-color: red; */
+}
+div#header-container>div.container>div.row>div.header-account>span>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: rgba(245, 245, 245, 0);
+    color: #d3d3d3;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: all .3s;
+    /* flex-wrap: nowrap; */
+    /* word-break:keep-all; */
+}
+div#header-container>div.container>div.row>div.header-account>span>a:hover{
+    transform: scale(1.1);
+    color: white;
+}
+div#header-container>div.mob-container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 20px;
+}
+div#header-container>div.mob-container>svg{
+    cursor: pointer;
+    width: 30px;
+    color: whitesmoke;
+}
+div#mob-menu{
+    position: fixed;
+    width: 80vw;
+    height: 100vh;
+    right: -90vw;
+    top: 0;
+    background-color: #fff;
+    z-index: 6;
+    padding: 25px 0;
+    transition: all .5s;
+    transition-timing-function: ease-out;
+
+}
+div#mob-menu.mob-menu-open{
+    right: 0;
+    top: 0;
+}
+div#mob-menu>div.mob-logo{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+div#mob-menu>div.mob-logo>a{
+    display: block;
+    width: 20%;
+    padding: 1%;
+}
+div#mob-menu>hr{
+    color: #333;
+    width: 100%;
+    margin: 20px auto;
+}
+div#mob-menu ul{
+    padding: 0;
+}
+div#mob-menu ul li{
+    margin: 10px 0;
+}
+div#mob-menu ul a{
+    font-size: 25px;
+    color: #222;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+}
+div#mob-menu>div.menu-close-button{
+    position: absolute;
+    left: -30px;
+    top: 50px;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+/* finish header */
+
+

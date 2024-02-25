@@ -38,16 +38,5 @@ getProductsData("#300","./products.json");
 getProductsData("#200","./products.json");
 getProductsData("#300","./products.json");
 
-function addToCart(productId,productName,productPrice,productTeacher,productBuyers){
-    userCartTbody.innerHTML +=
-        `
-            <tr>
-                <td>${productName}</td>
-                <td>${productTeacher}</td>
-                <td>${productPrice}</td>
-                <td>${productBuyers.includes(Object.globalUserId)?`<a class="user-buyOrnot-true" href="https://digikala.com">مشاهده</a>`:`<a class="user-buyOrnot-false" href="https://digikala.com">پرداخت</a>`}</td>
-            </tr>
 
-        `
-}
 

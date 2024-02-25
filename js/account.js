@@ -1,39 +1,4 @@
-var bgDark=document.getElementById("bg-dark");
-// var departmans=document.querySelectorAll("div#main-container div#parts-carousel div.departmans");
-var body=document.getElementsByTagName('body')[0];
-// var amoozeshIcon=document.querySelector("div#page-bar div.bar-container>div.row>div.amoozesh-icon");
-// var parvareshIcon=document.querySelector("div#page-bar div.bar-container>div.row>div.parvaresh-icon");
 var headerContainer=document.getElementById("header-container");
-// var mainContainer=document.getElementById("main-container");
-// var pageBar=document.getElementById("page-bar");
-var footerContainer=document.getElementById("footer-container");
-var mobMenuButton=document.querySelector("[mob-menu-button]");
-var mobCloseButton=document.querySelector("[mob-close-button]");
-var mobMenu=document.querySelector("div#mob-menu");
-var bgDarkMenu=document.getElementById("bg-dark-menu");
-// var bgImage=document.querySelector("[background-image]");
-
-
-mobMenuButton.addEventListener("click",mobMenuOpen);
-function mobMenuOpen(){
-    mobMenu.classList.add("mob-menu-open");
-    bgDarkMenu.classList.add("bg-dark-menu-show");
-    body.style.overflowY="hidden";    
-
-}
-mobCloseButton.addEventListener("click",mobMenuClose);
-function mobMenuClose(){
-    mobMenu.classList.remove("mob-menu-open");
-    bgDarkMenu.classList.remove("bg-dark-menu-show");
-    body.style.overflowY="scroll";    
-
-}
-
-// var myScrollFunc = function () {
-//     var y = window.scrollY;
-// };
-// window.addEventListener("scroll", myScrollFunc);
-
 function setScrollOptions(){
     var lastScrollTop = 0;
 
@@ -330,31 +295,6 @@ function newTicketInputClear(){
 
 
                                             // تیکت
-
-
-
-
-
-var searchShowIcon=document.querySelector("div#page-bar div.bar-container>div.search-container>svg.search-icon");
-var searchBar=document.querySelector("div#page-bar div.bar-container>div.search-container");
-var searchCloseIcon=document.querySelector("div#page-bar div.bar-container>div.search-container>svg.close-icon");
-var searchResults=document.querySelector("div#search-results");
-
-searchShowIcon.addEventListener("click",function(){
-    bgDark.classList.add("bg-dark-show");
-    headerContainer.classList.add("header-container-change");
-    searchBar.classList.add("search-container-show");
-    searchResults.classList.add("search-results-show");
-    body.style.overflowY="hidden";    
-});
-searchCloseIcon.addEventListener("click",function h(){
-    bgDark.classList.remove("bg-dark-show");
-    headerContainer.classList.remove("header-container-change");
-    searchBar.classList.remove("search-container-show");
-    searchResults.classList.remove("search-results-show");
-    body.style.overflowY="scroll";
-    myScrollFunc();
-});
 
 
 
