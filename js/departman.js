@@ -1,9 +1,4 @@
-var bgDark=document.getElementById("bg-dark");
 var headerContainer=document.getElementById("header-container");
-var body=document.getElementsByTagName('body')[0];
-var mobMenuButton=document.querySelector("[mob-menu-button]");
-var mobCloseButton=document.querySelector("[mob-close-button]");
-var mobMenu=document.querySelector("div#mob-menu");
 
 function setScrollOptions(){
     var lastScrollTop = 0;
@@ -24,41 +19,13 @@ function setScrollOptions(){
 }
 setScrollOptions();
 
+window.addEventListener("scroll", function(){
+
+    if(window.scrollY>=200){
+        headerContainer.classList.add("header-container-bg-change");
+    } else{
+        headerContainer.classList.remove("header-container-bg-change");    }  
+
+})
 
 
-mobMenuButton.addEventListener("click",mobMenuOpen);
-function mobMenuOpen(){
-    mobMenu.classList.add("mob-menu-open");
-    bgDarkMenu.classList.add("bg-dark-menu-show");
-    body.style.overflowY="hidden";    
-
-}
-mobCloseButton.addEventListener("click",mobMenuClose);
-function mobMenuClose(){
-    mobMenu.classList.remove("mob-menu-open");
-    bgDarkMenu.classList.remove("bg-dark-menu-show");
-    body.style.overflowY="scroll";    
-
-}
-
-
-
-var searchShowIcon=document.querySelector("div#page-bar div.bar-container>div.search-container>svg.search-icon");
-var searchBar=document.querySelector("div#page-bar div.bar-container>div.search-container");
-var searchCloseIcon=document.querySelector("div#page-bar div.bar-container>div.search-container>svg.close-icon");
-var searchResults=document.querySelector("div#search-results");
-
-searchShowIcon.addEventListener("click",function(){
-    bgDark.classList.add("bg-dark-show");
-    headerContainer.classList.add("header-container-change");
-    searchBar.classList.add("search-container-show");
-    searchResults.classList.add("search-results-show");
-    body.style.overflowY="hidden";    
-});
-searchCloseIcon.addEventListener("click",function h(){
-    bgDark.classList.remove("bg-dark-show");
-    headerContainer.classList.remove("header-container-change");
-    searchBar.classList.remove("search-container-show");
-    searchResults.classList.remove("search-results-show");
-    body.style.overflowY="scroll";
-});

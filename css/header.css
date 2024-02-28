@@ -16,6 +16,9 @@ div#header-container.header-container-change{
     /* background-color: rgba(0, 0, 0, 0.285); */
     top: -80px;
 }
+div#header-container.header-container-bg-change{
+    background-color: #111;
+}
 div#header-container>div.container>div.row>div{
     padding: 0px;
 }
