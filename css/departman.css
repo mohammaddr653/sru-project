@@ -200,6 +200,7 @@ div#main-nav-container>div.container>div.row>div.header-nav>ul{
 }
 div#main-nav-container>div.container>div.row>div.header-nav>ul>li{
     display: inline-block;
+    position: relative;
 }
 div#main-nav-container>div.container>div.row>div.header-nav>ul>li>a{
     margin: 0 5px;
@@ -208,31 +209,93 @@ div#main-nav-container>div.container>div.row>div.header-nav>ul>li>a{
     font-family: "iransans";
     color: #333;
 }
-div#main-nav-container>div.container>div.row>div.header-account{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    /* background-color: red; */
-}
-div#main-nav-container>div.container>div.row>div.header-account>span>a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    padding: 10px 20px;
-    background-color: rgba(245, 245, 245, 0);
-    color: #d3d3d3;
-    font-size: 16px;
-    border-radius: 10px;
+div#main-nav-container>div.container>div.row>div.header-nav>ul>li>div.nav-first-child{
+    position: absolute;
+    right: 0;
+    top: 73px;
+    z-index: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    border: .5px solid #d3d3d3;
+    border-top: 3px solid red;
+    box-shadow: 0 5px 5px .5px #7a7a7a39;
+    visibility: hidden;
+    opacity: 0;
     transition: all .3s;
-    /* flex-wrap: nowrap; */
-    /* word-break:keep-all; */
 }
-div#main-nav-container>div.container>div.row>div.header-account>span>a:hover{
-    transform: scale(1.1);
-    color: white;
+div#main-nav-container>div.container>div.row>div.header-nav>ul>li>div.nav-first-child-show{
+
+    z-index: 2;
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s;
+
+}
+div#main-nav-container>div.container>div.row>div.header-nav>ul>li>div.nav-first-child>ul{
+
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+div#main-nav-container>div.container>div.row>div.header-nav>ul>li>div.nav-first-child>ul>li{
+    width: 100%;
+}
+div#main-nav-container>div.container>div.row>div.header-nav>ul>li>div.nav-first-child>ul>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-color: greenyellow; */
+    padding: 10px 0;
+    padding-right: 20px;
+    color: #333;
+    transition: all .3s;
+
 }
 
+div#main-nav-container>div.container>div.row>div.header-nav>ul>li>div.nav-first-child>ul>li>a:hover{
+    /* background-color: #d3d3d3; */
+    transition: all .3s;
+    color: red;
+}
+div#main-nav-container>div.container>div.row>div.nav-be-admin>a{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+    /* transform: scale(1); */
+    transition: all .2s;
+}
+div#main-nav-container>div.container>div.row>div.nav-be-admin>a img{
+    width: 40px;
+    transition: all .2s;
+
+}
+div#main-nav-container>div.container>div.row>div.nav-be-admin>a span{
+    color: rgb(207, 69, 207);
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .2s;
+}
+div#main-nav-container>div.container>div.row>div.nav-be-admin>a:hover{
+    gap: 10px;
+    transition: all .2s;
+
+}
+div#main-nav-container>div.container>div.row>div.nav-be-admin>a:hover>span{
+    transform: scale(1.1);
+    transition: all .2s;
+
+}
 
 
 

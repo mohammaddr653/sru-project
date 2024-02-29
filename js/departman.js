@@ -29,3 +29,39 @@ window.addEventListener("scroll", function(){
 })
 
 
+// start main nav container
+
+let mainNavParents=document.querySelectorAll("div#main-nav-container>div.container>div.row>div.header-nav>ul>li>a");
+for(let mainNavParent of mainNavParents){
+    // let n=0
+    let navFirstChild;
+    mainNavParent.addEventListener("mouseover",function(){
+        navFirstChild=mainNavParent.parentElement.querySelector("div.nav-first-child");
+        // if(navFirstChild){
+        //     navFirstChild.classList.add("nav-first-child-show");
+        // }
+        // alert("e");
+        mainNavParent.parentElement.addEventListener("mouseover",function(){
+            if(navFirstChild){
+                navFirstChild.classList.add("nav-first-child-show");
+            }    
+        })
+    });    
+    mainNavParent.parentElement.addEventListener("mouseout",function(){
+        navFirstChild=mainNavParent.parentElement.querySelector("div.nav-first-child");
+        if(navFirstChild){
+            navFirstChild.classList.remove("nav-first-child-show");
+        }
+
+    });
+}
+
+
+
+
+
+
+
+// finish main nav container
+
+
