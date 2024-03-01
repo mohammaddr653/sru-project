@@ -20,7 +20,6 @@ function setScrollOptions(){
 setScrollOptions();
 
 window.addEventListener("scroll", function(){
-
     if(window.scrollY>=200){
         headerContainer.classList.add("header-container-bg-change");
     } else{
@@ -32,6 +31,61 @@ window.addEventListener("scroll", function(){
 // start main nav container
 
 
+
+let mainNav=document.getElementById("main-nav-container");
+let mainNavFirstChild=document.querySelector("div#main-nav-container>div.container>div.row>div.header-nav>ul>li>div.nav-first-child");
+let mainNavFirstChildTop=mainNavFirstChild.style.top;
+mainNavFirstChildTop="0";
+body.addEventListener("load",function(){
+    mainNavFirstChildTop=mainNav.offsetHeight.toString();
+    console.log(mainNavFirstChildTop);
+})
+
+
 // finish main nav container
 
 
+
+$(document).ready(function(){
+    $(".amozesh-carousel").owlCarousel();
+    // $(".parvaresh-carousel").owlCarousel();
+  });
+  $('.amozesh-carousel').owlCarousel({
+    loop: false,
+    navRewind: false,
+    margin:10,
+    nav: true,
+    center: false,
+    dots:false,
+    rtl:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+// $('.parvaresh-carousel').owlCarousel({
+//     loop: true,
+//     margin:20,
+//     nav: true,
+//     center: true,
+//     dots:false,
+//     rtl:true,
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:2
+//         },
+//         1000:{
+//             items:3
+//         }
+//     }
+// })

@@ -84,6 +84,12 @@ div#main-header div.main-header-trust>div.trust-container{
     padding: 0;
     position: relative;
     cursor: pointer;
+    transition: all .3s;
+
+}
+div#main-header div.main-header-trust>div.trust-container:hover{
+    transform: scale(1.1);
+    transition: all .3s;
 }
 div#main-header div.main-header-trust>div.trust-container div.row{
     width: 100%;
@@ -138,7 +144,8 @@ div#main-header div.main-header-trust>div.trust-container p{
 /* start main container */
 
 div#main-container{
-    width: 100vw;
+    /* width: 100vw; */
+    /* background-color: red; */
     height: 5000px;
     /* background-color: yellow; */
     /* padding: 20px 0; */
@@ -163,7 +170,7 @@ div#main-container{
 div#main-nav-container{
     /* position: relative; */
     z-index: 4;
-    width: 100%;
+    width: 100vw;
     background-color: white;
     transition: all .5s;
     top: 0;
@@ -212,7 +219,7 @@ div#main-nav-container>div.container>div.row>div.header-nav>ul>li>a{
 div#main-nav-container>div.container>div.row>div.header-nav>ul>li>div.nav-first-child{
     position: absolute;
     right: 0;
-    top: 73px;
+    /* top: 0; */
     z-index: 0;
     width: 100%;
     padding: 10px 0;
@@ -232,12 +239,12 @@ div#main-nav-container>div.container>div.row>div.header-nav>ul>li:hover>div.nav-
     z-index: 2;
 
 }
-div#main-nav-container>div.container>div.row>div.header-nav>ul>li>div.nav-first-child-show{
+/* div#main-nav-container>div.container>div.row>div.header-nav>ul>li>div.nav-first-child-show{
 
     visibility: visible;
     opacity: 1;
     transition: all .3s;
-}
+} */
 div#main-nav-container>div.container>div.row>div.header-nav>ul>li>div.nav-first-child>ul{
 
     /* background-color: red; */
@@ -314,22 +321,230 @@ div#main-nav-container>div.container>div.row>div.nav-be-admin>a:hover>span{
 
 
 div#main-container div.banner-container{
-    background-color: red;
-    width: 100%;
+    /* background-color: red; */
+    width: 100vw;
+    /* aspect-ratio: 1400/291.66; */
     /* height: 400px; */
     padding: 0;
-    margin-top: 20px;
+    margin: 20px auto;
     /* height: 5000px; */
 
 }
 div#main-container div.banner-container div.main-slider{
     padding: 0;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     overflow: hidden;
+    background-color: red;
+    width: 100%;
+    aspect-ratio: 2880/650;
     /* height: 500px; */
 
 }
 
 
+/* start new blocks */
+
+div#main-container div.banner-container div.new-blocks-container{
+    /* background-color: yellow; */
+    margin-top: 10px;
+    width: 100%;
+    /* height: 200px; */
+    padding: 0;
+    /* gap: 10px; */
+    /* height: 400px; */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+div#main-container div.banner-container div.new-blocks-container div.new-block{
+    background-color: red;
+    width: 100%;
+    aspect-ratio: 330/210;
+    /* gap: 10px; */
+    background: url("../images/732927.jpg") no-repeat center center;
+    background-size: cover;
+}
+/* .break {
+    flex-basis: 100%;
+    height: 0;
+  } */
+
+/* finish new blocks */
+
+
+
 /* finish banner */
+
+
+/* start popular blocks */
+
+
+div#main-container div.popular-blocks-container{
+    /* background-color: red; */
+    margin: 40px auto;
+    padding: 0;
+    height: 500px;
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-header{
+    /* background-color: yellow; */
+    padding: 0;
+    flex-wrap: nowrap;
+    position: relative;
+    align-items: center;
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-header>div{
+    background-color: white;
+    padding: 10px;
+    padding-right: 0;
+    width: fit-content;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-header>div>h4{
+    font-size: 18px;
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-header>div>button{
+    border: none;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all .3s;
+    color: #333;
+
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-header>div>button:hover{
+    background-color: #444;
+    color: whitesmoke;
+    transition: all .3s;
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-header>span{
+    position: absolute;
+    width: 100%;
+    height: .5px;
+    z-index: 1;
+    background-color: #d3d3d3;
+
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel{
+    background-color: yellow;
+    margin-top: 20px;
+    /* height: 500px; */
+}
+
+
+
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans{
+    text-align: center;
+    /* width: 100vw; */
+    margin: 0 auto;
+    /* padding: 50px 0; */
+    /* height: 30030px; */
+    background-color: blue;
+    position: relative;
+    /* height: 50vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 20px; */
+    /* position: absolute; */
+    /* visibility: hidden; */
+    /* opacity : 0;  */
+    z-index: 3;
+    padding: 0;
+}
+
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car{
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 20px; */
+    border-radius: 10px;
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car div.dep-car-content{
+    background-color: #111;
+    margin: 0 auto;
+
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car div.dep-car-content div.dep-car-con-bg{
+    height: 100%;
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.depatrmans>div.dep-car div.dep-car-content div.dep-car-con-bg>a{
+    height: 100%;
+    background-color: rgb(128, 0, 255); 
+    display: block; 
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car div.dep-car-content div.dep-car-con-bg img{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car div.dep-car-content div.dep-car-con-title>a{
+    display: block;
+    padding: 20px;
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car div.dep-car-content div.dep-car-con-title>a>h5{
+    font-size: 17px;
+    color: #d3d3d3;
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car div.owl-nav>button.owl-next{
+    left: -40px;
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car div.owl-nav>button.owl-prev{
+    right: -40px;
+}
+
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car div.owl-nav>button.owl-next,
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car div.owl-nav>button.owl-prev{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 45px;
+    color: black;
+    
+}
+div.owl-stage{
+    margin: 0 auto;
+}
+.owl-theme .owl-controls .owl-nav .disabled{
+	opacity: 0.5;
+	cursor: default;
+}
+.owl-nav .owl-prev.disabled,
+.owl-nav .owl-next.disabled {
+   opacity: .2;
+}
+
+@media screen and (max-width: 576px) {
+    div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car div.owl-nav>button.owl-next{
+        left: 0px;
+    }
+    div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car div.owl-nav>button.owl-prev{
+        right: 0px;
+    }
+        
+
+}
+
+
+
+
+
+/* finish popular blocks */
+
+
 /* finish main */
