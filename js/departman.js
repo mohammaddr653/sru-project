@@ -46,6 +46,9 @@ body.addEventListener("load",function(){
 
 
 
+
+
+
 $(document).ready(function(){
     $(".amozesh-carousel").owlCarousel();
     // $(".parvaresh-carousel").owlCarousel();
@@ -56,6 +59,7 @@ $(document).ready(function(){
     margin:10,
     nav: true,
     center: false,
+    autoHeight:false,
     dots:false,
     rtl:true,
     responsive:{
@@ -66,7 +70,7 @@ $(document).ready(function(){
             items:2
         },
         1000:{
-            items:5
+            items:4
         }
     }
 })
