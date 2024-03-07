@@ -44,52 +44,15 @@ body.addEventListener("load",function(){
 
 // finish main nav container
 
+let postsContentPreview = document.querySelectorAll("div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-bottom>div.card-bottom-title>p");
+for(let postContentPreview of postsContentPreview ){
+    let result = postContentPreview.innerHTML.substring(0,120);
+
+    postContentPreview.innerHTML = result+"...";
+    // console.log(postContentPreview.innerHTML.substring(1,10));
+    
+}
 
 
 
 
-
-$(document).ready(function(){
-    $(".amozesh-carousel").owlCarousel();
-    // $(".parvaresh-carousel").owlCarousel();
-  });
-  $('.amozesh-carousel').owlCarousel({
-    loop: false,
-    navRewind: false,
-    margin:10,
-    nav: true,
-    center: false,
-    autoHeight:false,
-    dots:false,
-    rtl:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:4
-        }
-    }
-})
-// $('.parvaresh-carousel').owlCarousel({
-//     loop: true,
-//     margin:20,
-//     nav: true,
-//     center: true,
-//     dots:false,
-//     rtl:true,
-//     responsive:{
-//         0:{
-//             items:1
-//         },
-//         600:{
-//             items:2
-//         },
-//         1000:{
-//             items:3
-//         }
-//     }
-// })

@@ -452,7 +452,7 @@ div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.
     position: relative;
     /* height: 50vh; */
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     row-gap: 10px;
     column-gap: 10px;
     /* margin: 20px; */
@@ -494,7 +494,13 @@ div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.
     height: 100%;
     overflow: hidden;
     border: 1px solid #d3d3d3;
+    transition: all .5s;
+
     /* box-shadow: 0 0 .5px 1px #d3d3d3; */
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content:hover{
+    box-shadow: 0 0 10px 1px #999;
+    transition: all .5s;    
 }
 div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a{
     display: flex;
@@ -503,6 +509,7 @@ div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     padding: 0;
     padding-bottom: 10px;
 
@@ -510,11 +517,76 @@ div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.
 
 div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-top{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
-div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-top img{
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-top>img:first-child{
     width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* aspect-ratio: 1.2; */
+    
 }
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-top span.post-card-icons{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding: 8px;
+    /* height: 35px; */
+    gap: 5px;
+    /* background-color: rgba(245, 245, 245, 0.762); */
+    /* border-radius: 0 0 10px 0; */
+    /* flex-grow: 0; */
+    /* width: 0px; */
+    /* transition: all .2s; */
+
+}
+/* div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content:hover>a>div.card-top span.post-card-icons{
+    width: 70px;
+    transition: all .2s;
+
+} */
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-top>span.post-card-icons>span{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    aspect-ratio: 1.1;
+    background-color: white;
+    border-radius: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content:hover>a>div.card-top>span.post-card-icons>span{
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s;
+
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-top img.video-card-img{
+    /* position: absolute; */
+    /* z-index: 5; */
+    /* top: 10px;
+    left: 10px; */
+    /* width: 20px; */
+    /* box-shadow: 0 0 10px 1px white; */
+    border-radius: 100%;
+    /* margin-left: 5px; */
+    width: 100%;
+
+}
+
 div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-bottom{
     display: flex;
     flex-direction: column;
@@ -605,6 +677,7 @@ div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.
     }
     div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content{
         border: 0.5px solid #d3d3d3;
+        background-color: white;
     }
     div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a{
         display: flex;
@@ -639,11 +712,28 @@ div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.
     div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-bottom{
         justify-content: center;
     }
-    div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-top img {
+    div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-top>img:first-child {
         width: 80px;
+        height: unset;
         aspect-ratio: 1.1;
         object-fit: cover;
         border-radius: 5px;
+
+    }
+    div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-bottom>div.card-bottom-info>span.card-producer>h5 {
+        font-size: 10px;
+    }
+    div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-bottom>div.card-bottom-info>span.card-date>span {
+        font-size: 10px;
+    }
+    div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-bottom>div.card-bottom-info>span.card-date>img {
+        width: 12px;
+    }
+    div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-bottom>div.card-bottom-info>span.card-producer>img {
+        display: none;
+    }
+    div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-top span.post-card-icons{
+        display: none;
     }
 }
 
