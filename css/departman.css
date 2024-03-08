@@ -437,6 +437,11 @@ div#main-container div.popular-blocks-container>div.popular-blocks-header>span{
 div#main-container div.popular-blocks-container>div.popular-blocks-carousel{
     /* background-color: yellow; */
     margin-top: 20px;
+    gap: 10px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* gap: 10px; */
+
     /* height: 500px; */
 }
 
@@ -648,6 +653,7 @@ div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.
 div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-bottom>div.card-bottom-info>span.card-producer>h5{
     color: #444;
     font-size: 13px;
+    text-align: right;
 }
 
 div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-bottom>div.card-bottom-info>span.card-producer>img{
@@ -670,6 +676,28 @@ div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.
 
     font-size: 13px;
 }
+div#main-container div.popular-blocks-container>div.show-more-posts{
+    /* background-color: red; */
+    width: 100%;
+    padding: 0;
+    height: 20px;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+}
+div#main-container div.popular-blocks-container>div.show-more-posts a{
+    position: absolute;
+    right: 0;
+    display: block;
+    padding: 0;
+}
+div#main-container div.popular-blocks-container>div.show-more-posts h4{
+    font-size: 18px;
+    color: rgb(70, 129, 246);
+}
+
 
 @media screen and (max-width: 576px) {
     div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans {
@@ -735,6 +763,10 @@ div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.
     div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a>div.card-top span.post-card-icons{
         display: none;
     }
+    div#main-container div.popular-blocks-container>div.show-more-posts a{
+        padding: 0 20px;
+    }
+    
 }
 
 /* div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.owl-nav>button.owl-next{

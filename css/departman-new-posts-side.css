@@ -1,0 +1,69 @@
+                                /* start new posts */
+
+
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel aside{
+    /* display: flex; */   /*added with bootstrap*/
+    flex-direction: column;
+    gap: 10px;
+    /* height: 100%; */
+    /* background-color: red; */
+    justify-content: space-between;
+
+}                               
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.new-posts{
+    background-color:white;
+    padding: 0;
+    /* border: 1px solid black; */
+    border: 1px solid #d3d3d3;
+
+    height: fit-content;
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.new-posts>div>div:nth-child(1){
+    padding: 0;
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgb(225, 225, 225);
+
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.new-posts>div>div:nth-child(1)>h3{
+    font-size: 17px;
+    color: #dfdfdf;
+    font-weight: 500;
+    margin-bottom: 0;
+
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.new-posts>div>div:nth-child(2){
+    padding: 20px 10px;
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.new-posts>div>div:nth-child(2)>ul{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.new-posts>div>div:nth-child(2)>ul>li>a{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    /* background-color: green; */
+    font-size: 15px;
+
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.new-posts>div>div:nth-child(2)>ul>li>a>span:first-child{
+    position: relative;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.new-posts>div>div:nth-child(2)>ul>li>a>span:first-child>img:nth-child(2){
+    position: absolute;
+    width: 20px;
+    opacity: .7;
+}
+                                /* finish new posts */
