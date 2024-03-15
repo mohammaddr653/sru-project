@@ -379,6 +379,291 @@ div#main-container div.banner-container div.new-blocks-container div.new-block{
 /* finish banner */
 
 
+
+/* start application courses */
+
+
+div#main-container div.application-container{
+    background-color: white;
+    /* height: 600px; */
+    /* overflow: hidden; */
+    position: relative;
+    border: 1px;
+    padding: 0;
+    box-shadow: 0 0 5px 5px #7a7a7a92;
+
+    /* border: .5px solid #d3d3d3; */
+}
+div#main-container div.application-container div#carouselExampleIndicators{
+    height: 100%;
+}
+div#main-container div.application-container div#carouselExampleIndicators div.carousel-inner{
+    height: 100%;
+}
+
+div#main-container div.application-container div.carousel-item{
+    height: 100%;
+}
+div#main-container div.application-container div.application-course-container{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    
+}
+div#main-container div.application-container div.carousel-indicators{
+    bottom: -30px;
+    /* background-color: red; */
+    margin-bottom: 0;
+}
+div#main-container div.application-container div.carousel-indicators button{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #333;
+
+}
+div#main-container div.application-container div.application-course-container>div.row{
+    gap: 10px;
+}
+div#main-container div.application-container div.application-course-container>div.row>div{
+/* padding: 20px; */
+background-color: white;
+
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-img{
+    position: relative;
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-img>img{
+    object-fit: cover;
+    width: 100%;
+    min-height: 100%;
+    aspect-ratio: 655/550;
+
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-img>span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #ffffff00 0%, rgb(255, 255, 255) 100%);
+    display: block;
+    /* z-index: 3; */
+    top: 0;
+    left: 0;
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-content{
+    /* background-color: pink; */
+    aspect-ratio: 655/550;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-top{
+    background-color: white;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 400px; */
+
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-top div.app-course-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    padding: 5px 0;
+    gap: 5px;
+    /* border-bottom: 1px solid black; */
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-top div.app-course-name>span:nth-child(1){
+    text-align: right;
+    /* background-color: red; */
+    padding: 0 20px;
+    width: 100%;
+    color: #444;
+    font-size: 17px;
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-top div.app-course-name>span:nth-child(2){
+    text-align: left;
+    padding: 0 20px;
+    /* background-color: yellow; */
+    width: 100%;
+
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-top div.app-course-name>span:nth-child(2)>h3{
+    color: rgb(191, 42, 42);
+    font-size: 35px;
+    letter-spacing: 5px;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    text-shadow: 0 0 5px 5px black;
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-top div.app-course-name>span:nth-child(3){
+    padding: 0 20px;
+    /* background-color: yellow; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    /* opacity: .8; */
+
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-top div.app-course-name>span:nth-child(3)>h3{
+    /* background-color: yellow; */
+    /* width: 100%; */
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(230, 238, 255);
+    width: fit-content;
+    padding: 5px 10px;
+    color: #222;
+    border-radius: 10px;
+    /* border: 1px solid rgb(90, 115, 227); */
+    box-shadow: 0 0 2px 1px rgba(0, 0, 255, 0.666);
+    
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-top div.app-course-about{
+    /* height: 20px; */
+    background-color: white;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 0;
+    font-size: 15px;
+    
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-top div.app-course-about>span{
+    background-color: white;
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    font-size: 14px;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+}
+
+div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-top div.app-course-about>p{
+    font-size: 15px;
+    line-height: 30px;
+    color: #333;
+    text-align: justify;
+    padding: 20px 0;
+    padding-bottom: 0;
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-top div.app-course-about>span.app-course-info>span>span{
+    color: rgb(72, 115, 157);
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: yellow;
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-bottom>div.app-course-price{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-weight: 500;
+
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-bottom>div.app-course-price>span:nth-child(2){
+    color: rgb(83, 127, 19);
+    font-size: 20px;
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-bottom>div.app-course-options{
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    align-items: center;
+    padding: 0 20px;
+    padding-bottom: 30px;
+    gap: 10px;
+}
+div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-bottom>div.app-course-options>a{
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/* finish application courses */
+
+
+/* start courses */
+
+div#main-container div.courses-container{
+    /* background-color: red; */
+    margin-top: 40px;
+}
+div#main-container div.courses-container>div.popular-blocks-header{
+    /* background-color: yellow; */
+    padding: 0;
+    flex-wrap: nowrap;
+    position: relative;
+    align-items: center;
+}
+div#main-container div.courses-container>div.popular-blocks-header>div{
+    background-color: white;
+    padding: 10px;
+    padding-right: 0;
+    width: fit-content;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+}
+div#main-container div.courses-container>div.popular-blocks-header>div>h4{
+    font-size: 18px;
+}
+div#main-container div.courses-container>div.popular-blocks-header>div>button{
+    border: none;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all .3s;
+    color: #333;
+
+}
+div#main-container div.courses-container>div.popular-blocks-header>div>button:hover{
+    background-color: #444;
+    color: whitesmoke;
+    transition: all .3s;
+}
+div#main-container div.courses-container>div.popular-blocks-header>span{
+    position: absolute;
+    width: 100%;
+    height: .5px;
+    z-index: 1;
+    background-color: #d3d3d3;
+
+}
+
+
+
+/* finish courses */
+
+
 /* start popular blocks */
 
 

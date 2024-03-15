@@ -54,5 +54,16 @@ for(let postContentPreview of postsContentPreview ){
 }
 
 
+let appsAboutPreview = document.querySelectorAll("div#main-container div.application-container div.application-course-container>div.row>div.app-content div.app-content-top div.app-course-about>p");
+for(let appAboutPreview of appsAboutPreview ){
+    let result = appAboutPreview.innerHTML.substring(0,320);
+
+    appAboutPreview.innerHTML = result+"...";
+    // console.log(postContentPreview.innerHTML.substring(1,10));
+    
+}
+
+
+
 
 
