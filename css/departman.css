@@ -146,7 +146,7 @@ div#main-header div.main-header-trust>div.trust-container p{
 div#main-container{
     /* width: 100vw; */
     /* background-color: red; */
-    height: 5000px;
+    /* height: 5000px; */
     /* background-color: yellow; */
     /* padding: 20px 0; */
     z-index: 1;
@@ -327,6 +327,7 @@ div#main-container div.banner-container{
     /* height: 400px; */
     padding: 0;
     margin: 20px auto;
+
     /* height: 5000px; */
 
 }
@@ -337,6 +338,9 @@ div#main-container div.banner-container div.main-slider{
     background-color: red;
     width: 100%;
     aspect-ratio: 2880/650;
+    box-shadow: 0 0 7px 2px #eaeff4;
+    border: 1px solid #ecf0f4;
+
     /* height: 500px; */
 
 }
@@ -362,10 +366,20 @@ div#main-container div.banner-container div.new-blocks-container{
 div#main-container div.banner-container div.new-blocks-container div.new-block{
     background-color: red;
     width: 100%;
+    /* gap: 10px; */
+    /* background: url("../images/73297.jpg") no-repeat center center; */
+    box-shadow: 0 0 7px 2px #eaeff4;
+    border: 1px solid #ecf0f4;
+
+}
+div#main-container div.banner-container div.new-blocks-container div.new-block>img{
+
+    width: 100%;
     aspect-ratio: 330/210;
     /* gap: 10px; */
-    background: url("../images/732927.jpg") no-repeat center center;
-    background-size: cover;
+    /* background: url("../images/73297.jpg") no-repeat center center; */
+    object-fit: cover;
+
 }
 /* .break {
     flex-basis: 100%;
@@ -390,7 +404,9 @@ div#main-container div.application-container{
     position: relative;
     border: 1px;
     padding: 0;
-    box-shadow: 0 0 5px 5px #7a7a7a92;
+    box-shadow: 0 0 7px 2px #eaeff4;
+    border: 1px solid #ecf0f4;
+
 
     /* border: .5px solid #d3d3d3; */
 }
@@ -658,6 +674,190 @@ div#main-container div.courses-container>div.popular-blocks-header>span{
     background-color: #d3d3d3;
 
 }
+div#main-container div.courses-container>div.courses-grid{
+    text-align: center;
+    /* width: 100vw; */
+    margin: 0 auto;
+    /* padding: 50px 0; */
+    /* height: 30030px; */
+    /* background-color: blue; */
+    position: relative;
+    /* height: 50vh; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    /* margin: 20px; */
+    /* position: absolute; */
+    /* visibility: hidden; */
+    /* opacity : 0;  */
+    z-index: 3;
+    padding: 0;
+    margin-top: 20px;
+
+}
+@media screen and (max-width: 976px) {
+    div#main-container div.courses-container>div.courses-grid{
+        grid-template-columns: auto auto auto;
+    }
+          
+
+}
+@media screen and (max-width: 776px) {
+    div#main-container div.courses-container>div.courses-grid{
+        grid-template-columns: auto auto;
+    }
+          
+
+}
+@media screen and (max-width: 576px) {
+    div#main-container div.courses-container>div.courses-grid{
+        grid-template-columns: auto auto;
+    }
+          
+
+}
+
+div#main-container div.courses-container>div.courses-grid>div.course-card{
+    background-color: white;
+    /* height: 300px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid #d3d3d3; */
+    box-shadow: 0 0 7px 0px #e2e6eb;
+    border: 1px solid #ecf0f4;
+    cursor: pointer;
+    position: relative;
+
+}
+div#main-container div.courses-container>div.courses-grid>div.course-card>div.course-card-top svg{
+    width: 10%;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+
+
+}
+div#main-container div.courses-container>div.courses-grid>div.course-card>div.course-card-top{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    justify-content: space-between;
+}
+div#main-container div.courses-container>div.courses-grid>div.course-card>div.course-card-top div.course-card-img img{
+    width: 100%;
+    aspect-ratio: 286/150;
+    object-fit: cover;
+    z-index: 1;
+    position: relative;
+}
+div#main-container div.courses-container>div.courses-grid>div.course-card>div.course-card-top div.course-card-img{
+    position: relative;
+}
+div#main-container div.courses-container>div.courses-grid>div.course-card>div.course-card-top div.course-card-img svg:nth-child(1){
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    width: 50%;
+    opacity: .5;
+    transition: all .2s;
+
+
+}
+div#main-container div.courses-container>div.courses-grid>div.course-card>div.course-card-top div.course-card-img svg:nth-child(2){
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 2;
+    /* width: 50px; */
+    opacity: .5;
+    transition: all .2s;
+
+}
+div#main-container div.courses-container>div.courses-grid>div.course-card:hover>div.course-card-top div.course-card-img svg{
+    opacity: 1;
+    transition: all .2s;
+
+}
+div#main-container div.courses-container>div.courses-grid>div.course-card>div.course-card-top div.course-card-info{
+    background-color: white;
+    text-align: right;
+}
+div#main-container div.courses-container>div.courses-grid>div.course-card>div.course-card-top div.course-card-info>h3{
+    font-size: 17px;
+    color: #333;
+    padding: 10px 20px;
+    z-index: 1;
+    position: relative;
+    width: fit-content;
+}
+div#main-container div.courses-container>div.courses-grid>div.course-card>div.course-card-top div.course-card-info>span{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5px;
+    justify-content: right;
+    align-items: center;
+    padding: 5px 20px;
+    width: 100%;
+    margin-bottom:15px ;
+}
+div#main-container div.courses-container>div.courses-grid>div.course-card>div.course-card-top div.course-card-info h4{
+    font-size: 13px;
+    color: #555;
+    font-weight: 300;
+    /* padding: 5px 20px; */
+    text-align: right;
+    z-index: 1;
+    position: relative;
+    width: fit-content;
+}
+div#main-container div.courses-container>div.courses-grid>div.course-card>div.course-card-bottom{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+div#main-container div.courses-container>div.courses-grid>div.course-card>div.course-card-bottom>div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    align-items: center;
+    gap: 5px;
+    color: rgb(0, 136, 255);
+
+}
+div#main-container div.courses-container>div.courses-grid>div.course-card>div.course-card-bottom>span{
+    color: green;
+
+
+}
+div#main-container div.courses-container>div.courses-grid>div.course-card>div.course-card-hr{
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+    background-color: white;
+    
+}
+div#main-container div.courses-container>div.courses-grid>div.course-card>div.course-card-hr>hr{
+    margin: 0;
+    background-color: #999;
+    height: 1.5px;
+    border-radius: 10px;
+    border: 0;
+    z-index: 1;
+    position: relative;
+
+}
 
 
 
@@ -671,7 +871,7 @@ div#main-container div.popular-blocks-container{
     /* background-color: red; */
     margin: 40px auto;
     padding: 0;
-    height: 500px;
+    /* height: 500px; */
 }
 div#main-container div.popular-blocks-container>div.popular-blocks-header{
     /* background-color: yellow; */
@@ -778,12 +978,13 @@ div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.
 
 
 div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content{
-    background-color: whitesmoke;
+    background-color: white;
     margin: 0 auto;
     /* width: 200px; */
     height: 100%;
     overflow: hidden;
-    border: 1px solid #d3d3d3;
+    box-shadow: 0 0 7px 1px #eaeff4;
+    border: 1px solid #ecf0f4;
     transition: all .5s;
 
     /* box-shadow: 0 0 .5px 1px #d3d3d3; */
