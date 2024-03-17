@@ -174,8 +174,10 @@ div#main-nav-container{
     background-color: white;
     transition: all .5s;
     top: 0;
+    margin-bottom: 20px;
     /* border-bottom: 1px solid #d3d3d3; */
-    box-shadow: 0 1px 5px 1px #e9e9e9
+    box-shadow: 0 1px 7px 0px #d5d9de;
+    border-bottom: 1px solid #e0e3e7;
 
 }
 div#main-nav-container.header-container-change{
@@ -326,7 +328,7 @@ div#main-container div.banner-container{
     /* aspect-ratio: 1400/291.66; */
     /* height: 400px; */
     padding: 0;
-    margin: 20px auto;
+    margin: 10px auto;
 
     /* height: 5000px; */
 
@@ -338,8 +340,8 @@ div#main-container div.banner-container div.main-slider{
     background-color: red;
     width: 100%;
     aspect-ratio: 2880/650;
-    box-shadow: 0 0 7px 2px #eaeff4;
-    border: 1px solid #ecf0f4;
+    box-shadow: 0 0 7px 0px #d5d9de;
+    border: 1px solid #e0e3e7;
 
     /* height: 500px; */
 
@@ -368,8 +370,8 @@ div#main-container div.banner-container div.new-blocks-container div.new-block{
     width: 100%;
     /* gap: 10px; */
     /* background: url("../images/73297.jpg") no-repeat center center; */
-    box-shadow: 0 0 7px 2px #eaeff4;
-    border: 1px solid #ecf0f4;
+    box-shadow: 0 0 7px 0px #d5d9de;
+    border: 1px solid #e0e3e7;
 
 }
 div#main-container div.banner-container div.new-blocks-container div.new-block>img{
@@ -404,8 +406,8 @@ div#main-container div.application-container{
     position: relative;
     border: 1px;
     padding: 0;
-    box-shadow: 0 0 7px 2px #eaeff4;
-    border: 1px solid #ecf0f4;
+    box-shadow: 0 0 7px 0px #d5d9de;
+    border: 1px solid #e0e3e7;
 
 
     /* border: .5px solid #d3d3d3; */
@@ -726,8 +728,8 @@ div#main-container div.courses-container>div.courses-grid>div.course-card{
     justify-content: space-between;
     align-items: center;
     /* border: 1px solid #d3d3d3; */
-    box-shadow: 0 0 7px 0px #e2e6eb;
-    border: 1px solid #ecf0f4;
+    box-shadow: 0 0 7px 0px #d5d9de;
+    border: 1px solid #e0e3e7;
     cursor: pointer;
     position: relative;
 
@@ -983,8 +985,8 @@ div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.
     /* width: 200px; */
     height: 100%;
     overflow: hidden;
-    box-shadow: 0 0 7px 1px #eaeff4;
-    border: 1px solid #ecf0f4;
+    box-shadow: 0 0 7px 0px #d5d9de;
+    border: 1px solid #e0e3e7;
     transition: all .5s;
 
     /* box-shadow: 0 0 .5px 1px #d3d3d3; */

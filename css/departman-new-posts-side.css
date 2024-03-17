@@ -14,7 +14,8 @@ div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.
     background-color:white;
     padding: 0;
     /* border: 1px solid black; */
-    border: 1px solid #d3d3d3;
+    box-shadow: 0 0 7px 0px #d5d9de;
+    border: 1px solid #e0e3e7;
 
     height: fit-content;
 }
