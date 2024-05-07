@@ -1,4 +1,4 @@
-var bgImage=document.querySelector("[background-image]");
+var bgImage=document.querySelectorAll("[background-image]");
 let preloaderContainer= document.getElementById("preloader-container");
 
 body.style.overflowY="hidden";
@@ -14,7 +14,23 @@ function myFunction(x) {
     if (x.matches) { // If media query matches
         bgImage.src="images/6409424.jpg";
     } else {
-        bgImage.src="images/346725.jpg";
+        // const bgImageAlbum=["images/wp2063106-civil-engineering-wallpapers.jpg",
+        // "images/wp2043551-civil-engineering-wallpapers.jpg",
+        // "images/wp4185680-tools-wallpapers.jpg"
+        // ]
+        let bgImageNum=0;
+        function bgImageFunc(){
+            bgImage[bgImageNum].classList.add("imgZoomIn");
+        }
+        bgImageFunc();
+        setInterval(function(){
+            bgImage[bgImageNum].classList.remove("imgZoomIn");
+            bgImageNum =bgImageNum+1;
+            if(bgImageNum==bgImage.length){
+                bgImageNum=0;
+            }
+            bgImageFunc();
+        },15000)
     }
 }
   
@@ -49,6 +65,44 @@ x.addEventListener("change", function() {
 // window.addEventListener("scroll", myScrollFunc);
 
 
+let depHeaderButs = document.querySelectorAll("div#main-container div#parts-carousel div.departmans-header>button");
+let departmans = document.querySelectorAll("div#main-container div#parts-carousel div.departmans");
+depHeaderButs[0].classList.add("but-clicked");
+departmansShow(depHeaderButs[0].classList);
+
+
+for(let depHeaderBut of depHeaderButs){
+    console.log(depHeaderBut);
+    depHeaderBut.addEventListener("mouseenter",function(){
+        depHeaderBut.classList.add("but-hover");
+    });
+    depHeaderBut.addEventListener("mouseleave",function(){
+        depHeaderBut.classList.remove("but-hover");
+    });
+    depHeaderBut.addEventListener("click",function(){
+        depHeaderButs[0].classList.remove("but-clicked");
+        depHeaderButs[1].classList.remove("but-clicked");
+        depHeaderBut.classList.add("but-clicked");
+        departmansShow(depHeaderBut.classList);
+
+        
+    });
+
+}
+function departmansShow(butClass){
+    if(butClass.contains("amoozesh-but")){
+        departmans[1].classList.remove("dep-show");
+        departmans[0].classList.add("dep-show");
+    }
+    if(butClass.contains("parvaresh-but")){
+        departmans[0].classList.remove("dep-show");
+        departmans[1].classList.add("dep-show");
+
+    }
+
+}
+
+
 
 
 $(document).ready(function(){
@@ -59,7 +113,7 @@ $(document).ready(function(){
     loop: true,
     margin:20,
     nav: true,
-    center: true,
+    center: false,
     dots:false,
     rtl:true,
     responsive:{

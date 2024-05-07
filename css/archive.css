@@ -192,6 +192,7 @@ div#main-container aside.archive-side div.archive-filters{
     justify-content: start;
     align-items: center;
     gap: 10px;
+    padding-bottom: 20px;
     box-shadow: 0 1px 7px 0px #d5d9de;
     border-bottom: 1px solid #e0e3e7;
 
@@ -221,25 +222,30 @@ div#main-container aside.archive-side div.archive-filters>div:first-child{
     }    
 
 }
-div#main-container aside.archive-side div.archive-filters>div.archive-flt{
+
+
+/* start archive flt groups */
+
+
+div#main-container aside.archive-side div.archive-filters>div.archive-flt-groups{
     background-color: white;
     padding: 0;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
-div#main-container aside.archive-side div.archive-filters>div.archive-flt>div.archive-filters-head{
+div#main-container aside.archive-side div.archive-filters>div.archive-flt-groups>div.archive-filters-head{
 
     padding: 10px;
     background-color: white;
     font-weight:500 ;
     color: #333;
 }
-div#main-container aside.archive-side div.archive-filters>div.archive-flt>ul{
+div#main-container aside.archive-side div.archive-filters>div.archive-flt-groups>ul{
     padding: 0;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-div#main-container aside.archive-side div.archive-filters>div.archive-flt>ul>li{
+div#main-container aside.archive-side div.archive-filters>div.archive-flt-groups>ul>li{
     background-color: white;
     padding: 0px 15px;
     transition: all .3s;
@@ -251,12 +257,12 @@ div#main-container aside.archive-side div.archive-filters>div.archive-flt>ul>li{
     font-size: 14px;
 
 }
-div#main-container aside.archive-side div.archive-filters>div.archive-flt>ul>li:hover{
+div#main-container aside.archive-side div.archive-filters>div.archive-flt-groups>ul>li:hover{
     color: red;
     transition: all .3s;
     cursor: pointer;
 }
-div#main-container aside.archive-side div.archive-filters>div.archive-flt>ul>li>span.archive-flt-checkbox{
+div#main-container aside.archive-side div.archive-filters>div.archive-flt-groups>ul>li>span.archive-flt-checkbox{
     border-radius: 100%;
     width: 15px;
     height: 15px;
@@ -264,6 +270,63 @@ div#main-container aside.archive-side div.archive-filters>div.archive-flt>ul>li>
     border: 2px solid #444;
 
 }
+
+/* finish archive flt groups */
+
+
+
+/* start archive flt grade */
+
+
+
+div#main-container aside.archive-side div.archive-filters>div.archive-flt-grade{
+    background-color: white;
+    padding: 0;
+    /* padding-bottom: 20px; */
+}
+div#main-container aside.archive-side div.archive-filters>div.archive-flt-grade>div.archive-filters-head{
+
+    padding: 10px;
+    background-color: white;
+    font-weight:500 ;
+    color: #333;
+}
+div#main-container aside.archive-side div.archive-filters>div.archive-flt-grade>ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+div#main-container aside.archive-side div.archive-filters>div.archive-flt-grade>ul>li{
+    background-color: white;
+    padding: 0px 15px;
+    transition: all .3s;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: right;
+    align-items: center;
+    font-size: 14px;
+
+}
+div#main-container aside.archive-side div.archive-filters>div.archive-flt-grade>ul>li:hover{
+    color: red;
+    transition: all .3s;
+    cursor: pointer;
+}
+div#main-container aside.archive-side div.archive-filters>div.archive-flt-grade>ul>li>span.archive-flt-checkbox{
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 2px solid #444;
+
+}
+
+
+/* finish archive flt grade */
+
+
 
 
 

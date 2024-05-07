@@ -7,7 +7,7 @@ div#header-container{
     position: fixed;
     z-index: 4;
     width: 100vw;
-    background-color: #111;
+    background-color: #ffffffe1;
     transition: all .5s;
     top: 0;
 
@@ -47,7 +47,8 @@ div#header-container>div.container>div.row>div.header-nav>ul>li>a{
     padding: 25px 10px;
     display: block;
     font-family: "iransans";
-    color: #d3d3d3;
+    color: #333;
+    /* text-shadow: 1px 1px rgba(0, 0, 0, 0.207); */
 }
 div#header-container>div.container>div.row>div.header-account{
     display: flex;
@@ -62,7 +63,7 @@ div#header-container>div.container>div.row>div.header-account>span>a{
     width: fit-content;
     padding: 10px 20px;
     background-color: rgba(245, 245, 245, 0);
-    color: #d3d3d3;
+    color: #333;
     font-size: 16px;
     border-radius: 10px;
     transition: all .3s;
@@ -71,7 +72,7 @@ div#header-container>div.container>div.row>div.header-account>span>a{
 }
 div#header-container>div.container>div.row>div.header-account>span>a:hover{
     transform: scale(1.1);
-    color: white;
+    color: #222;
 }
 div#header-container>div.mob-container{
     display: flex;
@@ -82,7 +83,7 @@ div#header-container>div.mob-container{
 div#header-container>div.mob-container>svg{
     cursor: pointer;
     width: 30px;
-    color: whitesmoke;
+    color: #333;
 }
 div#mob-menu{
     position: fixed;

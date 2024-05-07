@@ -10,12 +10,22 @@ var headerContainer=document.getElementById("header-container");
 
 
 amoozeshIcon.addEventListener("click",function(){
-    window.scrollTo({ top: 400, behavior: 'smooth'});
+    window.scrollTo({ top: 0, behavior: 'smooth'});
+    depHeaderButs[1].classList.remove("but-clicked");
+
+    depHeaderButs[0].classList.add("but-clicked");
+    departmansShow(depHeaderButs[0].classList);
+
     // parvareshIcon.classList.remove("parvaresh-icon-light");
     // amoozeshIcon.classList.add("amoozesh-icon-light");
 });
 parvareshIcon.addEventListener("click",function(){
-    window.scrollTo({ top: 850, behavior: 'smooth'});
+    window.scrollTo({ top: 0, behavior: 'smooth'});
+    depHeaderButs[0].classList.remove("but-clicked");
+
+    depHeaderButs[1].classList.add("but-clicked");
+    departmansShow(depHeaderButs[1].classList);
+
     // amoozeshIcon.classList.remove("amoozesh-icon-light");
     // parvareshIcon.classList.add("parvaresh-icon-light");
 

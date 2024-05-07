@@ -152,6 +152,7 @@ div#main-container{
     z-index: 1;
     padding: 0;
     position: relative;
+    padding-bottom:50px ;
 }
 
 
@@ -652,6 +653,12 @@ div#main-container div.courses-container>div.popular-blocks-header>div{
 div#main-container div.courses-container>div.popular-blocks-header>div>h4{
     font-size: 18px;
 }
+@media screen and (max-width: 576px) {
+    div#main-container div.courses-container>div.popular-blocks-header>div>h4{
+        padding-right:10px ;
+    }
+
+}
 div#main-container div.courses-container>div.popular-blocks-header>div>button{
     border: none;
     padding: 10px 20px;
@@ -715,6 +722,7 @@ div#main-container div.courses-container>div.courses-grid{
 @media screen and (max-width: 576px) {
     div#main-container div.courses-container>div.courses-grid{
         grid-template-columns: auto auto;
+        padding: 0 5px;
     }
           
 
@@ -897,6 +905,12 @@ div#main-container div.popular-blocks-container>div.popular-blocks-header>div{
 div#main-container div.popular-blocks-container>div.popular-blocks-header>div>h4{
     font-size: 18px;
 }
+@media screen and (max-width: 576px) {
+    div#main-container div.popular-blocks-container>div.popular-blocks-header>div>h4{
+        padding-right: 10px;
+    }
+}
+
 div#main-container div.popular-blocks-container>div.popular-blocks-header>div>button{
     border: none;
     padding: 10px 20px;
@@ -1171,6 +1185,8 @@ div#main-container div.popular-blocks-container>div.show-more-posts{
     height: 20px;
     padding: 30px 0px;
     display: flex;
+    display: none;
+
     align-items: center;
     justify-content: right;
     position: relative;
@@ -1189,12 +1205,19 @@ div#main-container div.popular-blocks-container>div.show-more-posts h4{
 
 @media screen and (max-width: 576px) {
     div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans {
-        gap: 0;
+        gap: 5px;
+        padding: 0 5px;
+
     }
     div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content{
-        border: 0.5px solid #d3d3d3;
+        box-shadow: 0 0 7px 0px #d5d9de;
         background-color: white;
     }
+    div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content:hover{
+    box-shadow: inset;
+    transition: all .5s;    
+    }
+
     div#main-container div.popular-blocks-container>div.popular-blocks-carousel div.departmans>div.dep-car-content>a{
         display: flex;
         width: 100%;
