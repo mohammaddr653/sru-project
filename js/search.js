@@ -9,6 +9,7 @@ var searchCloseIcon=document.querySelector("div#page-bar div.bar-container>div.s
 fetch("https://jsonplaceholder.typicode.com/users")
 .then(res => res.json())
 .then(data => {
+    //jkk
         dataSearch.addEventListener("input" , e => {
             var value=e.target.value.toLowerCase();
             userCardContainer.innerHTML=" ";
