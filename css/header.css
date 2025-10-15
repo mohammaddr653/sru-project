@@ -47,7 +47,7 @@ div#header-container>div.container>div.row>div.header-nav>ul>li>a{
     padding: 25px 10px;
     display: block;
     font-family: "iransans";
-    color: #333;
+    color: white;
     /* text-shadow: 1px 1px rgba(0, 0, 0, 0.207); */
 }
 div#header-container>div.container>div.row>div.header-account{
@@ -63,7 +63,7 @@ div#header-container>div.container>div.row>div.header-account>span>a{
     width: fit-content;
     padding: 10px 20px;
     background-color: rgba(245, 245, 245, 0);
-    color: #333;
+    color: white;
     font-size: 16px;
     border-radius: 10px;
     transition: all .3s;
